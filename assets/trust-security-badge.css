@@ -1,0 +1,250 @@
+.trust-security-badge {
+  position: relative;
+  overflow: hidden;
+  margin: 2rem 0;
+  padding: 2.2rem 2rem;
+  background: #fff;
+  border: 1px solid rgba(229, 0, 126, 0.18);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(229, 0, 126, 0.12);
+  text-align: center;
+  animation: trust-badge-glow 3s ease-in-out infinite;
+}
+
+@keyframes trust-badge-glow {
+  0%,
+  100% {
+    box-shadow: 0 8px 24px rgba(229, 0, 126, 0.12);
+  }
+  50% {
+    box-shadow: 0 10px 32px rgba(229, 0, 126, 0.28);
+  }
+}
+
+.trust-security-badge__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.trust-security-badge__icon {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e5007e, #ff4fa8);
+  color: #fff;
+}
+
+.trust-security-badge__icon::after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: -60%;
+  width: 45%;
+  height: 140%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.85), transparent);
+  transform: rotate(20deg);
+  animation: trust-badge-icon-shine 3s ease-in-out infinite;
+}
+
+@keyframes trust-badge-icon-shine {
+  0% {
+    left: -60%;
+  }
+  35%,
+  100% {
+    left: 130%;
+  }
+}
+
+.trust-security-badge__icon svg {
+  width: 2.1rem;
+  height: 2.1rem;
+  fill: currentColor;
+  z-index: 1;
+}
+
+.trust-security-badge__header-text {
+  max-width: 34rem;
+}
+
+.trust-security-badge__title {
+  margin: 0 0 0.6rem;
+  font-weight: 800;
+  font-size: 1.9rem;
+  color: #1a1a1a;
+}
+
+.trust-security-badge__description {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.55;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.trust-security-badge__divider {
+  height: 1px;
+  margin: 1.6rem auto;
+  max-width: 90%;
+  background: rgba(229, 0, 126, 0.15);
+}
+
+.trust-security-badge__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.trust-security-badge__row + .trust-security-badge__row {
+  margin-top: 1.1rem;
+}
+
+.trust-security-badge__dot {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.trust-security-badge__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #fdf0f7;
+  color: #e5007e;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(229, 0, 126, 0.2);
+}
+
+.trust-security-badge__methods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+.trust-security-badge__method {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  background: #f7f7f8;
+  color: #444;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.trust-security-badge__method::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.85), transparent);
+  transform: skewX(-20deg);
+  animation: trust-badge-method-shine 3.6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes trust-badge-method-shine {
+  0% {
+    left: -75%;
+  }
+  20%,
+  100% {
+    left: 130%;
+  }
+}
+
+.trust-security-badge__method--logo {
+  background: #fff;
+  padding: 0.55rem 1.1rem;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.trust-security-badge__method--logo img {
+  display: block;
+  height: 1.7rem;
+  width: auto;
+}
+
+.trust-security-badge__method-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.trust-security-badge__method-svg {
+  height: 2.4rem;
+  width: auto;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trust-security-badge {
+    animation: none;
+  }
+
+  .trust-security-badge__icon::after {
+    animation: none;
+    display: none;
+  }
+
+  .trust-security-badge__method::after {
+    animation: none;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .trust-security-badge {
+    padding: 1.6rem 1.4rem;
+  }
+
+  .trust-security-badge__icon {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+
+  .trust-security-badge__icon svg {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .trust-security-badge__title {
+    font-size: 1.5rem;
+  }
+
+  .trust-security-badge__description {
+    font-size: 1.1rem;
+  }
+
+  .trust-security-badge__row {
+    font-size: 1.15rem;
+  }
+
+  .trust-security-badge__pill {
+    font-size: 1.05rem;
+  }
+
+  .trust-security-badge__method {
+    font-size: 1rem;
+  }
+}

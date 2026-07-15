@@ -1,0 +1,170 @@
+.order-tracking {
+  margin: 2rem 0;
+  padding: 2.2rem 1.6rem;
+  background: #fff;
+  border: 1px solid rgba(229, 0, 126, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(229, 0, 126, 0.1);
+  text-align: center;
+}
+
+.order-tracking__eyebrow {
+  margin: 0 0 0.6rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e5007e;
+}
+
+.order-tracking__heading {
+  margin: 0 0 2.4rem;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #1a1a1a;
+}
+
+.order-tracking__steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.order-tracking__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 10.5rem;
+}
+
+.order-tracking__icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #e5007e, #ff4fa8);
+  box-shadow: 0 0 0 10px rgba(229, 0, 126, 0.12), 0 10px 20px rgba(229, 0, 126, 0.3);
+  margin-bottom: 1.1rem;
+  animation: order-tracking-icon-pulse 2.4s ease-in-out infinite;
+}
+
+.order-tracking__step:nth-child(3) .order-tracking__icon {
+  animation-delay: 0.4s;
+}
+
+.order-tracking__step:nth-child(5) .order-tracking__icon {
+  animation-delay: 0.8s;
+}
+
+@keyframes order-tracking-icon-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(229, 0, 126, 0.12), 0 10px 20px rgba(229, 0, 126, 0.3);
+  }
+  50% {
+    transform: scale(1.06);
+    box-shadow: 0 0 0 14px rgba(229, 0, 126, 0.18), 0 12px 26px rgba(229, 0, 126, 0.4);
+  }
+}
+
+.order-tracking__icon svg {
+  width: 100%;
+  height: 100%;
+  padding: 0.9rem;
+  box-sizing: border-box;
+  color: #fff;
+  fill: #fff;
+}
+
+/* El ícono de carrito (paso 1) tiene mucho margen interno dibujado en el
+   propio archivo SVG, asi que se ve mas chico que los demas a igual tamano;
+   se compensa agrandandolo un poco mas. */
+.order-tracking__step:nth-child(1) .order-tracking__icon svg {
+  padding: 0.35rem;
+}
+
+.order-tracking__number {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #e5007e;
+  margin-bottom: 0.3rem;
+}
+
+.order-tracking__title {
+  font-weight: 800;
+  font-size: 1.45rem;
+  color: #1a1a1a;
+  margin-bottom: 0.35rem;
+}
+
+.order-tracking__subtitle {
+  font-size: 1.15rem;
+  color: rgba(var(--color-foreground), 0.65);
+}
+
+.order-tracking__line {
+  flex: 1 1 auto;
+  align-self: flex-start;
+  margin-top: 2.8rem;
+  height: 4px;
+  min-width: 1.5rem;
+  background: linear-gradient(90deg, #e5007e, #ff4fa8);
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .order-tracking__icon {
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .order-tracking {
+    padding: 1.8rem 1.1rem;
+  }
+
+  .order-tracking__eyebrow {
+    font-size: 1rem;
+  }
+
+  .order-tracking__heading {
+    font-size: 1.55rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .order-tracking__step {
+    width: 7.4rem;
+  }
+
+  .order-tracking__icon {
+    width: 4.2rem;
+    height: 4.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .order-tracking__icon svg {
+    padding: 0.65rem;
+  }
+
+  .order-tracking__number {
+    font-size: 1rem;
+  }
+
+  .order-tracking__title {
+    font-size: 1.1rem;
+  }
+
+  .order-tracking__subtitle {
+    font-size: 0.92rem;
+  }
+
+  .order-tracking__line {
+    margin-top: 2.1rem;
+    min-width: 0.8rem;
+  }
+}

@@ -1,0 +1,65 @@
+{{ 'trust-security-badge.css' | asset_url | stylesheet_tag }}
+
+<div class="trust-security-badge">
+  <div class="trust-security-badge__header">
+    <span class="trust-security-badge__icon" aria-hidden="true">
+      {{ 'icon-padlock.svg' | inline_asset_content }}
+    </span>
+    <div class="trust-security-badge__header-text">
+      <p class="trust-security-badge__title">Compra 100% segura</p>
+      <p class="trust-security-badge__description">
+        Pagas al recibir en la puerta de tu casa, sin transferencias ni adelantos. Producto sellado y en perfecto estado.
+      </p>
+    </div>
+  </div>
+
+  <div class="trust-security-badge__divider"></div>
+
+  <div class="trust-security-badge__row">
+    <span class="trust-security-badge__perk">🚚 Pago contraentrega</span>
+    <span class="trust-security-badge__dot" aria-hidden="true">·</span>
+    <span class="trust-security-badge__perk">📦 Producto sellado</span>
+  </div>
+
+  <div class="trust-security-badge__row">
+    <span class="trust-security-badge__perk">🔒 Pagas como prefieras</span>
+  </div>
+
+  <div class="trust-security-badge__row">
+    <span class="trust-security-badge__pill">⭐ Atención personalizada</span>
+  </div>
+
+  <div class="trust-security-badge__methods">
+    <span class="trust-security-badge__method trust-security-badge__method--cod" style="animation-delay: 0s;">🚚 Contraentrega</span>
+    <span class="trust-security-badge__method trust-security-badge__method--logo" style="animation-delay: -0.6s;">
+      <img
+        src="{{ images['magnific_mejora-la-calidad-de-imag_5xhGPFxKxe.png'] | image_url: width: 160 }}"
+        alt="Addi"
+        loading="lazy"
+        width="80"
+        height="32"
+      >
+    </span>
+    <span class="trust-security-badge__method trust-security-badge__method--logo" style="animation-delay: -1.2s;">
+      <img
+        src="{{ images['magnific_mejora-la-calidad-de-imag_74kX0R8JAL.png'] | image_url: width: 160 }}"
+        alt="Sistecrédito"
+        loading="lazy"
+        width="80"
+        height="32"
+      >
+    </span>
+    <span class="trust-security-badge__method trust-security-badge__method--logo" style="animation-delay: -1.8s;">
+      <img
+        src="{{ images['magnific_mejora-la-calidad-de-imag_YV9baoVWeC.png'] | image_url: width: 160 }}"
+        alt="Bold"
+        loading="lazy"
+        width="80"
+        height="32"
+      >
+    </span>
+    {%- for type in shop.enabled_payment_types -%}
+      <span class="trust-security-badge__method-icon">{{ type | payment_type_svg_tag: class: 'trust-security-badge__method-svg' }}</span>
+    {%- endfor -%}
+  </div>
+</div>

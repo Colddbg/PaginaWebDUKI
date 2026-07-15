@@ -1,0 +1,33 @@
+{{ 'order-tracking-steps.css' | asset_url | stylesheet_tag }}
+
+<div class="order-tracking">
+  <p class="order-tracking__eyebrow">Seguimiento de tu pedido</p>
+  <p class="order-tracking__heading">Así llega tu pedido</p>
+
+  <div class="order-tracking__steps">
+    <div class="order-tracking__step">
+      <span class="order-tracking__icon">{{ 'icon-cart.svg' | inline_asset_content }}</span>
+      <span class="order-tracking__number">01</span>
+      <span class="order-tracking__title">Pedido</span>
+      <span class="order-tracking__subtitle">Mismo día</span>
+    </div>
+
+    <span class="order-tracking__line" aria-hidden="true"></span>
+
+    <div class="order-tracking__step">
+      <span class="order-tracking__icon">{{ 'icon-truck.svg' | inline_asset_content }}</span>
+      <span class="order-tracking__number">02</span>
+      <span class="order-tracking__title">En camino</span>
+      <span class="order-tracking__subtitle">24 a 48 h</span>
+    </div>
+
+    <span class="order-tracking__line" aria-hidden="true"></span>
+
+    <div class="order-tracking__step">
+      <span class="order-tracking__icon">{{ 'icon-map-pin.svg' | inline_asset_content }}</span>
+      <span class="order-tracking__number">03</span>
+      <span class="order-tracking__title">Entrega</span>
+      <span class="order-tracking__subtitle">3 a 7 días</span>
+    </div>
+  </div>
+</div>
