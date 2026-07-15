@@ -1,0 +1,862 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_jUBQBe": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_WiBR7T": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/PADRE_GRANDE_11cbe4ab-826c-435a-8bd5-fc352fd3a756.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_XF7BeY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BANNERS_Mesa_de_trabajo_02_jpg.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_WiBR7T",
+        "slide_XF7BeY"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".slideshow__controls,.slider-buttons,.slider-button,.slider-counter,.slideshow__autoplay {display: none !important;}",
+        ".slideshow__text-wrapper {height: 0 !important; min-height: 0 !important; padding: 0 !important; margin: 0 !important; overflow: hidden !important;}"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Presentación de diapositivas sobre tu marca"
+      }
+    },
+    "image_banner_Pd3rLQ": {
+      "type": "image-banner",
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/PADRE_GRANDE_11cbe4ab-826c-435a-8bd5-fc352fd3a756.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "custom_liquid_xm9X9C": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [],
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<a href=\"https://www.tiendasduki.com.co/collections/menu-tecnologia\">\n  <picture>\n    <!-- Imagen para móviles -->\n    <source \n      srcset=\"https://cdn.shopify.com/s/files/1/0767/0788/9396/files/BANNERS-03_jpg.jpg?v=1780004134\" \n      media=\"(max-width: 767px)\">\n      \n    <!-- Imagen para escritorio -->\n    <img \n      src=\"https://cdn.shopify.com/s/files/1/0767/0788/9396/files/BANNERS_Mesa_de_trabajo_03_jpg.jpg?v=1780004134\" \n      style=\"width: 100%; height: auto; display: block;\">\n  </picture>\n</a>\n\n<style>\n.banner-responsive {\n  display: block;\n  text-decoration: none;\n  position: relative;\n  overflow: hidden;\n}\n\n.banner-responsive img {\n  width: 100%;\n  height: auto;\n  transition: transform 0.4s ease;\n}\n\n.banner-responsive:hover img {\n  transform: scale(1.03);\n}\n</style>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "promo_bars": {
+      "type": "promo-bars",
+      "blocks": {
+        "benefits": {
+          "type": "benefits",
+          "settings": {
+            "shipping_text": "Envío Gratis",
+            "payment_methods": "Addi · Sistecrédito · Bold",
+            "payment_logo_1": "shopify://shop_images/magnific_mejora-la-calidad-de-imag_5xhGPFxKxe.png",
+            "payment_logo_2": "shopify://shop_images/magnific_mejora-la-calidad-de-imag_74kX0R8JAL.png",
+            "payment_logo_3": "shopify://shop_images/magnific_mejora-la-calidad-de-imag_YV9baoVWeC.png",
+            "payment_subtext": "Compra fácil y segura"
+          }
+        },
+        "social_proof": {
+          "type": "social_proof",
+          "settings": {
+            "text": "Miles de clientes ya compraron en DUKI",
+            "link": "/collections/all"
+          }
+        },
+        "promo": {
+          "type": "promo",
+          "settings": {
+            "text": "Hot DUKI • Hasta 70% OFF • Envío Gratis",
+            "link": "/collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "benefits",
+        "social_proof",
+        "promo"
+      ],
+      "settings": {}
+    },
+    "featured_collection_9aKmLC": {
+      "type": "featured-collection",
+      "custom_css": [
+        "/* Precio tachado en rojo */.card__information s {color: #e53935 !important;}",
+        " /* Precio sin tachar en verde */.card__information s + span {color: #43a047 !important;}",
+        " /* Precio sin tachar en verde cuando no hay tachado */.card__information span:not(:first-child):not([style*=\"line-through\"]) {color: #43a047 !important;}",
+        " /* Negrillas */.card__heading,.card__heading a,.price-item {font-weight: 800 !important;}",
+        ".collection__title .title {text-align: center !important; width: 100% !important; font-weight: 800 !important;}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "ofertas-del-mes",
+        "products_to_show": 5,
+        "title": "<strong>OFERTAS RELAMPAGO 🔥</strong>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "color_scheme": "scheme-cc6ee37b-1304-4661-9950-5ec1ac63ca7d",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "categoria-termos-web"
+          }
+        },
+        "collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "smartwatch"
+          }
+        },
+        "collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "diademas"
+          }
+        },
+        "collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "audifonos-pro"
+          }
+        },
+        "featured_collection_XhqBfX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "energia"
+          }
+        }
+      },
+      "block_order": [
+        "collection-0",
+        "collection-1",
+        "collection-2",
+        "collection-3",
+        "featured_collection_XhqBfX"
+      ],
+      "custom_css": [
+        ".title-wrapper-with-link {justify-content: center !important; text-align: center !important;}",
+        ".collection-list-title {text-align: center !important;}",
+        ".card__heading .icon-wrap {display: none !important;}"
+      ],
+      "settings": {
+        "title": "<strong>Compra por categoria</strong>",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "color_scheme": "scheme-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_Tc4zjW": {
+      "type": "featured-collection",
+      "custom_css": [
+        "/* Precio tachado en rojo */.card__information s {color: #e53935 !important;}",
+        " /* Precio sin tachar en verde */.card__information s + span {color: #43a047 !important;}",
+        " /* Precio sin tachar en verde cuando no hay tachado */.card__information span:not(:first-child):not([style*=\"line-through\"]) {color: #43a047 !important;}",
+        " /* Negrillas */.card__heading,.card__heading a,.price-item {font-weight: 800 !important;}",
+        ".collection__title .title {text-align: center !important; width: 100% !important; font-weight: 800 !important;}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "favorita-2",
+        "products_to_show": 5,
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "color_scheme": "scheme-cc6ee37b-1304-4661-9950-5ec1ac63ca7d",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_FGUxJe": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<a href=\"https://www.tiendasduki.com.co/products/fly-airdot-180\" class=\"banner-responsive\">\n  <picture>\n    <!-- Imagen para móviles -->\n    <source \n      srcset=\"https://cdn.shopify.com/s/files/1/0767/0788/9396/files/BANNERS_MEDIDA222-01_800x800.jpg?v=1769008420\" \n      media=\"(max-width: 767px)\">\n      \n    <!-- Imagen para escritorio -->\n    <img \n      src=\"https://cdn.shopify.com/s/files/1/0767/0788/9396/files/BANNERS_MEDIDA_79-01.jpg?v=1769007993\" \n      alt=\"Banner Promocional\" \n      style=\"width: 100%; height: auto; display: block;\">\n  </picture>\n</a>\n\n<style>\n.banner-responsive {\n  display: block;\n  text-decoration: none;\n  position: relative;\n  overflow: hidden;\n}\n\n.banner-responsive img {\n  width: 100%;\n  height: auto;\n  transition: transform 0.4s ease;\n}\n\n.banner-responsive:hover img {\n  transform: scale(1.03);\n}\n</style>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collection_list_bixGFK": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_jdxnqX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "https-www-tiendasduki-com-co-products-fly-airdot-180-_pos-1-_psq-f-180-_ss-e-_v-1-0"
+          }
+        },
+        "featured_collection_WBTyq6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "https-www-tiendasduki-com-co-products-cafetera-electrica-kalley"
+          }
+        },
+        "featured_collection_d9Wkcm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "smarwacth"
+          }
+        },
+        "featured_collection_jt3C3q": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "plancha-kall-90"
+          }
+        },
+        "featured_collection_37kkhr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "diadema-d-40"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_jdxnqX",
+        "featured_collection_WBTyq6",
+        "featured_collection_d9Wkcm",
+        "featured_collection_jt3C3q",
+        "featured_collection_37kkhr"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".card__heading .icon-wrap,.card__heading svg {display: none !important;}",
+        ".title-wrapper-with-link {justify-content: center !important;}",
+        ".collection-list-title {text-align: center !important; width: 100% !important;}"
+      ],
+      "settings": {
+        "title": "<strong>Compra nuestro top 5 más vendidos 🔥</strong>",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "color_scheme": "scheme-2",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_UgDUAU": {
+      "type": "featured-collection",
+      "custom_css": [
+        "/* Precio tachado en rojo */.card__information s {color: #e53935 !important;}",
+        " /* Precio sin tachar en verde */.card__information s + span {color: #43a047 !important;}",
+        " /* Precio sin tachar en verde cuando no hay tachado */.card__information span:not(:first-child):not([style*=\"line-through\"]) {color: #43a047 !important;}",
+        " /* Negrillas */.card__heading,.card__heading a,.price-item {font-weight: 800 !important;}",
+        ".collection__title .title {text-align: center !important; width: 100% !important; font-weight: 800 !important;}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "precios-para-amar-duki",
+        "products_to_show": 5,
+        "title": "<strong>¡COMPRA AHORA 🔥!</strong>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "color_scheme": "scheme-cc6ee37b-1304-4661-9950-5ec1ac63ca7d",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_iqQwzF": {
+      "type": "featured-collection",
+      "custom_css": [
+        "/* Precio tachado en rojo */.card__information s {color: #e53935 !important;}",
+        " /* Precio sin tachar en verde */.card__information s + span {color: #43a047 !important;}",
+        " /* Precio sin tachar en verde cuando no hay tachado */.card__information span:not(:first-child):not([style*=\"line-through\"]) {color: #43a047 !important;}",
+        " /* Negrillas */.card__heading,.card__heading a,.price-item {font-weight: 800 !important;}",
+        ".collection__title .title {text-align: center !important; width: 100% !important; font-weight: 800 !important;}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "mas-productos",
+        "products_to_show": 5,
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "color_scheme": "scheme-cc6ee37b-1304-4661-9950-5ec1ac63ca7d",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_V8VM9z": {
+      "type": "featured-collection",
+      "custom_css": [
+        "/* Precio tachado en rojo */.card__information s {color: #e53935 !important;}",
+        " /* Precio sin tachar en verde */.card__information s + span {color: #43a047 !important;}",
+        " /* Precio sin tachar en verde cuando no hay tachado */.card__information span:not(:first-child):not([style*=\"line-through\"]) {color: #43a047 !important;}",
+        " /* Negrillas */.card__heading,.card__heading a,.price-item {font-weight: 800 !important;}",
+        ".collection__title .title {text-align: center !important; width: 100% !important; font-weight: 800 !important;}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "explora-tus-intereses",
+        "products_to_show": 5,
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "color_scheme": "scheme-cc6ee37b-1304-4661-9950-5ec1ac63ca7d",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_QXxpTE": {
+      "type": "featured-collection",
+      "custom_css": [
+        "/* Precio tachado en rojo */.card__information s {color: #e53935 !important;}",
+        " /* Precio sin tachar en verde */.card__information s + span {color: #43a047 !important;}",
+        " /* Precio sin tachar en verde cuando no hay tachado */.card__information span:not(:first-child):not([style*=\"line-through\"]) {color: #43a047 !important;}",
+        " /* Negrillas */.card__heading,.card__heading a,.price-item {font-weight: 800 !important;}",
+        ".collection__title .title {text-align: center !important; width: 100% !important; font-weight: 800 !important;}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "mas-productos-2",
+        "products_to_show": 5,
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "color_scheme": "scheme-cc6ee37b-1304-4661-9950-5ec1ac63ca7d",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_peRLFK": {
+      "type": "image-banner",
+      "blocks": {
+        "buttons_KNtmdd": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Compra ahora",
+            "button_link_2": "shopify://collections/all",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "buttons_KNtmdd"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 768px) {.banner__buttons .button {position: relative; top: 120px !important; }}",
+        "@media (min-width: 769px) {.banner__buttons .button {position: relative; top: 50px !important; }}",
+        ".banner__buttons .button {font-weight: 1000 !important;}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/FLY_SOUND_jpg.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "multicolumn_W48RLB": {
+      "type": "trust-badges",
+      "settings": {}
+    },
+    "ss_testimonial_8_ABJh9V": {
+      "type": "ss-testimonial-8",
+      "blocks": {
+        "testimonials_FEiGKj": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "¡Me encantó mi compra! 😍",
+            "text": "Tenía mis dudas al comprar por internet, pero todo salió perfecto. Mi pedido llegó rápido, bien empacado y exactamente como se mostraba en la página. Sin duda volveré a comprar.",
+            "author_date": "Luisa Rincon"
+          }
+        },
+        "testimonials_4UPb4J": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Compraré de nuevo 💖",
+            "text": "Lo que más me gustó fue la atención. Me respondieron rápido mis preguntas y el proceso de compra fue muy fácil. Se nota que se preocupan por sus clientes cuando uno compra, me encantaa",
+            "author_date": "Mafe Ariza"
+          }
+        },
+        "testimonials_PhhLkr": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Muy recomendados ⭐",
+            "text": "Encontré varios productos que necesitaba en un solo lugar. El pedido llegó en excelente estado y dentro del tiempo prometido. Muy buena experiencia.",
+            "author_date": "Yesid Toleido"
+          }
+        },
+        "testimonials_tgPrxA": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Superó mis expectativas ✨",
+            "text": "Desde la compra hasta la entrega todo fue muy sencillo. Me encantó recibir exactamente lo que esperaba y con una presentación impecable.",
+            "author_date": "Diana Perez"
+          }
+        },
+        "testimonials_pczx6F": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Confianza total 🙌",
+            "text": "Ya he realizado varias compras y siempre he tenido una excelente experiencia. Buenos productos, buen servicio y entregas rápidas.",
+            "author_date": "Alejandro Pineda"
+          }
+        },
+        "testimonials_JzMxHk": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Todo salió perfecto 🚚",
+            "text": "Hoy en día es difícil encontrar tiendas en línea que ofrezcan una experiencia tan completa. La compra fue rápida, la información del pedido siempre estuvo disponible y el producto llegó en excelentes condiciones. Me sentí acompañado durante todo el proceso y eso genera mucha confianza.",
+            "author_date": "Esperanza Torres"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_FEiGKj",
+        "testimonials_4UPb4J",
+        "testimonials_PhhLkr",
+        "testimonials_tgPrxA",
+        "testimonials_pczx6F",
+        "testimonials_JzMxHk"
+      ],
+      "disabled": true,
+      "name": "SS - Testimonial #8",
+      "settings": {
+        "heading": "¿Aún tienes dudas? Nuestros clientes te las resuelven 😊",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 30,
+        "heading_size_mobile": 22,
+        "heading_height": 80,
+        "content_align": "center",
+        "rating_text_hide": false,
+        "rating_text": "Descubre por qué nuestros clientes nos califican con",
+        "rating_text_custom": false,
+        "rating_text_font": "josefin_sans_n4",
+        "rating_text_size": 24,
+        "rating_text_size_mobile": 14,
+        "rating_text_height": 130,
+        "rating_text_mt": 16,
+        "rating_hide": false,
+        "rating": 4.5,
+        "stars_count": 5,
+        "stars_size": 28,
+        "stars_size_mobile": 24,
+        "stars_gap": 5,
+        "text": "<p>Mas de <strong>900 </strong>experiencias guardadas</p>",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 20,
+        "text_size_mobile": 16,
+        "text_advanced": false,
+        "text_height": 130,
+        "text_mt": 16,
+        "slider_width": 90,
+        "slider_view": 3,
+        "slider_view_mobile": 1.2,
+        "slider_advanced": true,
+        "slider_gap": 20,
+        "slider_gap_mobile": 20,
+        "slider_mt": 40,
+        "card_advanced": true,
+        "card_padding_vertical": 32,
+        "card_padding_vertical_mobile": 24,
+        "card_padding_horizontal": 40,
+        "card_padding_horizontal_mobile": 24,
+        "card_radius": 36,
+        "card_border_thickness": 2,
+        "card_align": "center",
+        "card_align_mobile": "center",
+        "card_shadow": true,
+        "card_heading_custom": false,
+        "card_heading_font": "josefin_sans_n4",
+        "card_heading_size": 24,
+        "card_heading_size_mobile": 20,
+        "card_heading_advanced": false,
+        "card_heading_height": 130,
+        "card_heading_mt": 16,
+        "card_text_custom": false,
+        "card_text_font": "josefin_sans_n4",
+        "card_text_size": 14,
+        "card_text_size_mobile": 14,
+        "card_text_advanced": false,
+        "card_text_height": 150,
+        "card_text_mt": 16,
+        "card_text_more": "Leer completo",
+        "card_text_less": "Leer menos",
+        "card_count_words": 20,
+        "card_author_date_text_custom": false,
+        "card_author_date_text_font": "josefin_sans_n4",
+        "card_author_date_text_size": 16,
+        "card_author_date_text_size_mobile": 16,
+        "card_author_date_text_advanced": false,
+        "card_author_date_text_height": 130,
+        "card_author_date_text_mt": 16,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "arrow_size": 50,
+        "arrow_size_mobile": 50,
+        "arrow_icon_size": 28,
+        "arrow_icon_size_mobile": 28,
+        "arrow_border_thickness": 0,
+        "dots_show_desktop": false,
+        "dots_show_mobile": false,
+        "dots_size": 12,
+        "dots_size_mobile": 16,
+        "button": "",
+        "button_url": "",
+        "new_tab": false,
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 16,
+        "button_size_mobile": 14,
+        "button_advanced": false,
+        "button_height": 100,
+        "button_padding_vertical": 20,
+        "button_padding_horizontal": 16,
+        "button_radius": 8,
+        "button_border_thickness": 0,
+        "button_mt": 24,
+        "button_align": "center",
+        "button_color": "#ffffff",
+        "button_hover_color": "#ffffff",
+        "button_bg_color": "#121212",
+        "button_bg_hover_color": "#121212",
+        "button_border_color": "#121212",
+        "button_border_hover_color": "#121212",
+        "card_heading_color": "#121212",
+        "card_text_color": "#121212",
+        "card_author_date_text_color": "#121212",
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#121212",
+        "card_shadow_color": "#00b67a",
+        "arrow_color": "#121212",
+        "arrow_hover_color": "#121212",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#121212",
+        "arrow_border_hover_color": "#121212",
+        "dots_color": "#121212",
+        "stars_color": "#ffffff",
+        "stars_bg_color": "#fcca2c",
+        "stars_bg_half_color": "#dddddd",
+        "heading_color": "#ffffff",
+        "rating_text_color": "#ffffff",
+        "text_color": "#ffffff",
+        "background_style": "gradient",
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, rgba(229, 0, 126, 1), rgba(255, 255, 255, 1) 100%)",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "width": "page",
+        "content_width": 1200,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "custom_liquid_HUTUQU": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "17580412960b94f567": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1760741512a5197e40": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "slideshow_V9XQME": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_NgBawW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/GAMING_jpg.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Compra aqui",
+            "link": "shopify://collections/parlante-s-22",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_HR6myN": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/GIRLY_ZONE_jpg.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "Compra aqui",
+            "link": "shopify://collections/kids-zone",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_XkMVLg": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/HOGAR_PLUS_jpg_f3d0004d-0788-4bfe-b2d5-8b08d6ee3289.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Compra aqui",
+            "link": "shopify://collections/gaming",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        }
+      },
+      "block_order": [
+        "slide_NgBawW",
+        "slide_HR6myN",
+        "slide_XkMVLg"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "/* OCULTAR CONTROLES DE NAVEGACIÓN DEL SLIDER */.slider-buttons,.slideshow__controls,.splide__pagination,.splide__arrows,.splide__arrow,.banner__controls,.banner__pagination,.banner__arrows {display: none !important;}",
+        " /* BAJAR EL BOTÓN DE COMPRA AHORA DE LA PRESENTACIÓN */.banner__buttons {margin-top: 200px !important; /* Ajusta el valor para bajar más o menos */}"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Presentación de diapositivas sobre tu marca"
+      }
+    }
+  },
+  "order": [
+    "slideshow_jUBQBe",
+    "image_banner_Pd3rLQ",
+    "custom_liquid_xm9X9C",
+    "promo_bars",
+    "featured_collection_9aKmLC",
+    "collection-list",
+    "featured_collection_Tc4zjW",
+    "custom_liquid_FGUxJe",
+    "collection_list_bixGFK",
+    "featured_collection_UgDUAU",
+    "featured_collection_iqQwzF",
+    "featured_collection_V8VM9z",
+    "featured_collection_QXxpTE",
+    "image_banner_peRLFK",
+    "multicolumn_W48RLB",
+    "ss_testimonial_8_ABJh9V",
+    "custom_liquid_HUTUQU",
+    "17580412960b94f567",
+    "1760741512a5197e40",
+    "slideshow_V9XQME"
+  ]
+}

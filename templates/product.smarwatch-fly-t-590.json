@@ -1,0 +1,363 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "ss_tabs_block_jVgBT8": {
+      "type": "ss-tabs-block",
+      "blocks": {
+        "tab_CAbrad": {
+          "type": "tab",
+          "settings": {
+            "svg_color": "#121212",
+            "icon": "newsletter",
+            "question": "Descripcion",
+            "answer": "<p>El <strong>Reloj Inteligente T-590 AMOLED 49 mm</strong> combina una pantalla amplia y brillante con funciones inteligentes diseñadas para acompañarte durante todo el día. Su diseño moderno y deportivo lo convierte en una excelente opción para quienes buscan mantenerse conectados, monitorear su actividad física y disfrutar de un accesorio versátil y elegante.</p><p>⌚ <strong>Pantalla AMOLED de 49 mm con excelente definición y colores vibrantes.</strong></p><p>🎨 <strong>Incluye 4 pulseras intercambiables para adaptar tu estilo a cualquier ocasión.</strong></p><h3>Medidas aproximadas:</h3><p>• Tamaño de pantalla: 49 mm.<br/>• Largo de la caja: 4.9 cm.<br/>• Ancho de la caja: 4.3 cm.<br/>• Grosor: 1.2 cm.<br/>• Largo total con correa: 25 cm.<br/>• Ancho de la correa: 2.2 cm.</p><h3>Características principales:</h3><p>• Pantalla AMOLED de alta definición.<br/>• Llamadas Bluetooth desde el reloj.<br/>• Recepción de notificaciones y mensajes.<br/>• Monitoreo de frecuencia cardíaca.<br/>• Medición de oxígeno en sangre.<br/>• Seguimiento de sueño.<br/>• Múltiples modos deportivos.<br/>• Control de música desde el reloj.<br/>• Compatible con Android e iOS.<br/>• Incluye 4 pulseras intercambiables.</p><h3>Contenido del paquete:</h3><p>• 1 Reloj Inteligente T-590 AMOLED.<br/>• 4 Pulseras intercambiables.<br/>• 1 Cable de carga USB.<br/>• 1 Manual de usuario.</p>",
+            "answer_html": "{{ product.description }}"
+          }
+        },
+        "tab_tKLhHn": {
+          "type": "tab",
+          "settings": {
+            "svg_color": "#121212",
+            "icon": "truck",
+            "question": "Envio",
+            "answer": "<p><strong>Despacho rápido y seguro a todo Colombia.</strong></p><p>Procesamos tu pedido de manera ágil para que lo recibas entre <strong>3 y 5 días hábiles</strong>, dependiendo de la ciudad de destino y la transportadora encargada.</p>",
+            "answer_html": ""
+          }
+        },
+        "tab_hrbACG": {
+          "type": "tab",
+          "settings": {
+            "svg_color": "#121212",
+            "icon": "return_arrow",
+            "question": "Garantia",
+            "answer": "<p><strong>Compra con tranquilidad y respaldo.</strong></p><p>Todos nuestros productos cuentan con garantía por defectos de fabricación. La gestión se realizará según las condiciones y tiempos establecidos para cada producto, con acompañamiento y soporte oportuno por parte de nuestro equipo de atención.</p>",
+            "answer_html": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_CAbrad",
+        "tab_tKLhHn",
+        "tab_hrbACG"
+      ],
+      "custom_css": [],
+      "name": "SS - Product tabs",
+      "settings": {
+        "tabs_position": "below_buy",
+        "close_other": true,
+        "open_default": false,
+        "subtitle": "",
+        "subtitle_size": 10,
+        "subtitle_size_mobile": 10,
+        "subtitle_height": 150,
+        "title": "",
+        "title_size": 10,
+        "title_size_mobile": 10,
+        "title_height": 150,
+        "question_font_size": 20,
+        "question_font_size_mobile": 20,
+        "question_height": 150,
+        "answer_font_size": 15,
+        "answer_font_size_mobile": 15,
+        "answer_height": 150,
+        "icon_width": 26,
+        "arrow_size": 14,
+        "subtitle_color": "#121212",
+        "title_color": "#121212",
+        "text_color": "#121212",
+        "answer_color": "#121212",
+        "arrow_color": "#121212",
+        "border_color": "#f2f2f2",
+        "background_color": "rgba(0,0,0,0)",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_x_desktop": 0,
+        "padding_x": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "button_padding_y": 10
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "text_VexYFe": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Te acompaña en cada reto con diseño moderno, pantalla brillante y funciones inteligentes que elevan tu día a otro nivel.</strong>",
+            "text_style": "body"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_liquid_AJjp4F": {
+          "type": "custom_liquid",
+          "name": "Liquid Bold",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div style=\"display:inline-flex;align-items:center;gap:8px;border:1.5px solid #d0d0d0;border-radius:6px;padding:6px 11px;font-size:11px;color:#666;background:#fff;margin-top:8px;font-family:sans-serif;\">\n  <div style=\"display:flex;align-items:center;gap:4px;flex-shrink:0;\">\n    <div style=\"display:flex;align-items:center;gap:3px;\">\n      <div style=\"width:18px;height:18px;border-radius:50%;background:#3b0068;display:flex;align-items:center;justify-content:center;\">\n        <div style=\"width:6px;height:6px;background:#e91e8c;border-radius:1px;\"></div>\n      </div>\n      <span style=\"font-size:11px;font-weight:600;color:#3b0068;letter-spacing:-0.3px;\">Nequi</span>\n    </div>\n    <span style=\"font-size:9px;color:#bbb;\">vía</span>\n    <div style=\"background:linear-gradient(135deg,#1a237e 0%,#c62828 100%);border-radius:50px;padding:2px 7px;display:inline-flex;align-items:center;gap:3px;\">\n      <div style=\"background:#fff;color:#c62828;font-weight:800;font-size:8px;width:11px;height:11px;border-radius:2px;display:inline-flex;align-items:center;justify-content:center;\">b</div>\n      <span style=\"color:#fff;font-weight:700;font-size:10px;letter-spacing:-0.5px;\">old</span>\n    </div>\n  </div>\n  <span style=\"font-size:11px;color:#555;\">Paga con <strong style=\"color:#3b0068\">Nequi</strong> por medio de <strong style=\"color:#c62828\">Bold</strong></span>\n</div>"
+          }
+        },
+        "custom_liquid_PrcYrr": {
+          "type": "custom_liquid",
+          "name": "Liquid Sistecredito",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{% comment %}\n  Snippet: sistecredito.liquid\n  Uso: {% render 'sistecredito' %}\n  Pégalo debajo del precio en main-product.liquid o product-template.liquid\n{% endcomment %}\n\n<div class=\"sc-wrap\">\n  <div class=\"sc-bloque\">\n    <div class=\"sc-logo\">\n      <span class=\"sc-azul\">siste</span><span class=\"sc-verde\">crèdito</span>\n    </div>\n    <span class=\"sc-texto\">\n      Paga con <strong class=\"sc-azul\">Sistecrédito</strong> en 3 cuotas.\n    </span>\n  </div>\n</div>\n\n<style>\n  .sc-wrap {\n    margin: 8px 0;\n  }\n  .sc-bloque {\n    display: inline-flex;\n    align-items: center;\n    gap: 8px;\n    border: 1px solid #c8c8c8;\n    border-radius: 6px;\n    padding: 7px 12px;\n    background: #fff;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n  }\n  .sc-logo {\n    font-size: 12px;\n    font-weight: 700;\n    flex-shrink: 0;\n    line-height: 1;\n  }\n  .sc-azul { color: #1a3fa3; }\n  .sc-verde { color: #3aaf2a; }\n  .sc-texto {\n    font-size: 11px;\n    color: #555;\n  }\n</style>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant-picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity-selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "custom_liquid_wHV7Qa": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"happy-customersV2\">\n    <div class=\"avatarsV2\">\n        <img src=\"https://img.freepik.com/free-photo/stylish-african-american-woman-smiling_23-2148770405.jpg\" alt=\"Customer 1\" class=\"avatarV2\" />\n        <img src=\"https://thumbs.dreamstime.com/b/beautiful-african-american-woman-relaxing-outside-happy-middle-aged-smiling-46298787.jpg\" alt=\"Customer 2\" class=\"avatarV2\" />\n        <img src=\"https://media.istockphoto.com/id/1320651997/photo/young-woman-close-up-isolated-studio-portrait.jpg?s=612x612&w=0&k=20&c=lV6pxz-DknISGT2jjiSvUmSaw0hpMDf-dBpT8HTSAUI=\" alt=\"Customer 3\" class=\"avatarV2\" />\n    </div>\n    <span class=\"textV2\">\n        <span style=\"font-weight: 900;\">Maria</span>\n        <span class=\"verifiedV2\">\n            <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/800px-Twitter_Verified_Badge.svg.png\" alt=\"verified badge\">\n        </span>\n        <span> y <strong>758</strong> personas compraron </span>\n    </span>\n</div>\n\n<style>\n    .happy-customersV2 {\n        display: flex;\n        align-items: center;\n        background-color: #ffffff;\n        border-radius: 8px;\n        padding: 10px 15px;\n        font-family: Roboto, sans-serif !important; \n        font-size: 12px;\n        color: #000;\n        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);\n        width: 100%; /* Ocupar todo el ancho */\n        max-width: none; /* Evitar restricciones de tamaño */\n        text-align: left; /* Asegurar que el texto quede bien alineado */\n    }\n\n    .avatarsV2 {\n        display: flex;\n        align-items: center;\n        margin-right: 10px;\n    }\n\n    .avatarV2 {\n        width: 22px;\n        height: 22px;\n        border-radius: 50%;\n        border: 2px solid white;\n        margin-left: -7px;\n        object-fit: cover;\n    }\n\n    .textV2 {\n        font-weight: normal;\n        font-size: 12px;\n        color: #000;\n        display: flex;\n        align-items: center;\n        gap: 4px;\n    }\n\n    .textV2 strong {\n        font-weight: 800;\n        font-family: Roboto, sans-serif;\n    }\n\n    .verifiedV2 {\n        display: flex;\n        align-items: center;\n    }\n\n    .verifiedV2 img {\n        height: 13px;\n        width: 13px;\n        vertical-align: middle;\n        transform: translateY(-1px);\n    }\n</style>"
+          }
+        },
+        "product-inventory": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "text_VexYFe",
+        "price",
+        "custom_liquid_AJjp4F",
+        "custom_liquid_PrcYrr",
+        "description",
+        "variant-picker",
+        "quantity-selector",
+        "buy_buttons",
+        "custom_liquid_wHV7Qa",
+        "product-inventory"
+      ],
+      "custom_css": [
+        "/* Precio anterior (tachado) en gris */.price-item--compare {color: #888 !important; text-decoration: line-through !important; opacity: 0.7 !important;}",
+        " /* SOLO el precio actual (final) en verde */.price-item--sale {color: #00a64f !important; /* Verde Sistecrédito */ font-weight: 700 !important;}",
+        " /* Evita que el precio regular (sin descuento) se pinte en verde */.price-item--regular:not(.price-item--sale) {color: inherit !important; font-weight: normal !important;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Características principales",
+            "icon": "check_mark",
+            "row_content": "<ul><li>El smartwatch<strong> FLY T-590</strong> ofrece un diseño moderno de <strong>49 mm</strong> con pantalla <strong>HD IPS AMOLED</strong> de gran nitidez. Está pensado para quienes buscan estilo y funcionalidad en un solo dispositivo, con múltiples modos deportivos, seguimiento de actividad, llamadas desde el reloj y compatibilidad total con dispositivos móviles.</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Especificaciones técnicas",
+            "icon": "check_mark",
+            "row_content": "<ul><li>El modelo <strong>T-590 </strong>integra carga inalámbrica y sensores avanzados para monitorizar sueño, presión, clima y temperatura corporal. También ofrece pagos sin contacto, brújula integrada, alertas dinámicas y modo de meditación. Su conectividad fluida permite recibir notificaciones, mensajes y responder llamadas directamente desde la muñeca.</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Incluye en la caja",
+            "icon": "check_mark",
+            "row_content": "<ul><li>El paquete contiene el <strong>smartwatch FLY T-590</strong>, cuatro correas intercambiables, base de carga inalámbrica, manual de usuario y garantía del fabricante.</li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "FLY",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "section",
+        "container_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true,
+        "image": "shopify://shop_images/Generated_Image_December_02_2025_-_12_47PM.png",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_jMGQBL": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_eyEMm7": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Un mundo de posibilidades</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_9kfMbt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nuestros productos están creados a tu alcance, pensados en tus necesidades y diseñados a tu medida, para que disfrutes tecnología que realmente se adapta a tu vida.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_eyEMm7",
+        "text_9kfMbt"
+      ],
+      "name": "BANNER REFERENCIA",
+      "settings": {
+        "image": "shopify://shop_images/BANNER_TECH_OPC_1.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "custom_css": [
+        "/* Precio tachado en rojo */.card__information s {color: #e53935 !important;}",
+        " /* Precio sin tachar en verde (el span justo después del tachado) */.card__information s + span {color: #43a047 !important;}",
+        " /* Precio sin tachar en verde cuando NO hay tachado */.card__information span:not(:first-child):not([style*=\"line-through\"]) {color: #43a047 !important;}"
+      ],
+      "settings": {
+        "heading": "También te puede interesar",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_d3gJ4F": {
+      "type": "trust-badges",
+      "settings": {}
+    },
+    "175795996676fff960": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_UcRwTN": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_UcRwTN"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "ss_tabs_block_jVgBT8",
+    "main",
+    "collapsible-content",
+    "image_with_text_jMGQBL",
+    "related-products",
+    "multicolumn_d3gJ4F",
+    "175795996676fff960"
+  ]
+}

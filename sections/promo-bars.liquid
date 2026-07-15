@@ -1,0 +1,250 @@
+{{ 'promo-bars.css' | asset_url | stylesheet_tag }}
+
+<div class="promo-bars page-width">
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'benefits' -%}
+        <div class="promo-bar promo-bar--benefits" {{ block.shopify_attributes }}>
+          <span class="promo-bar__bg promo-bar__bg--addi"></span>
+          <span class="promo-bar__bg promo-bar__bg--sistecredito"></span>
+          <span class="promo-bar__bg promo-bar__bg--bold"></span>
+          <span class="promo-bar__desktop-view">
+            <span class="promo-bar__shipping">
+              {%- if block.settings.shipping_text_1 != blank or block.settings.shipping_text_2 != blank or block.settings.shipping_text_3 != blank -%}
+                <span class="promo-bar__ship-texts">
+                  {%- if block.settings.shipping_text_1 != blank -%}
+                    <strong>{{ block.settings.shipping_text_1 }}</strong>
+                  {%- endif -%}
+                  {%- if block.settings.shipping_text_2 != blank -%}
+                    <strong>{{ block.settings.shipping_text_2 }}</strong>
+                  {%- endif -%}
+                  {%- if block.settings.shipping_text_3 != blank -%}
+                    <strong>{{ block.settings.shipping_text_3 }}</strong>
+                  {%- endif -%}
+                </span>
+              {%- else -%}
+                <span class="promo-bar__icon">📦</span>
+                <strong>{{ block.settings.shipping_text }}</strong>
+              {%- endif -%}
+            </span>
+            <span class="promo-bar__divider"></span>
+            <span class="promo-bar__text">
+              {%- if block.settings.payment_logo_1 != blank or block.settings.payment_logo_2 != blank or block.settings.payment_logo_3 != blank -%}
+                <span class="promo-bar__logos">
+                  {%- if block.settings.payment_logo_1 != blank -%}
+                    <img src="{{ block.settings.payment_logo_1 | image_url: width: 160 }}" alt="Addi" loading="lazy">
+                  {%- endif -%}
+                  {%- if block.settings.payment_logo_2 != blank -%}
+                    <img src="{{ block.settings.payment_logo_2 | image_url: width: 160 }}" alt="Sistecrédito" loading="lazy">
+                  {%- endif -%}
+                  {%- if block.settings.payment_logo_3 != blank -%}
+                    <img src="{{ block.settings.payment_logo_3 | image_url: width: 160 }}" alt="Bold" loading="lazy">
+                  {%- endif -%}
+                </span>
+                <span class="promo-bar__logo-texts">
+                  {%- if block.settings.payment_text_1 != blank -%}
+                    <small>{{ block.settings.payment_text_1 }}</small>
+                  {%- endif -%}
+                  {%- if block.settings.payment_text_2 != blank -%}
+                    <small>{{ block.settings.payment_text_2 }}</small>
+                  {%- endif -%}
+                  {%- if block.settings.payment_text_3 != blank -%}
+                    <small>{{ block.settings.payment_text_3 }}</small>
+                  {%- endif -%}
+                </span>
+              {%- else -%}
+                <strong>{{ block.settings.payment_methods }}</strong>
+                <small>{{ block.settings.payment_subtext }}</small>
+              {%- endif -%}
+            </span>
+          </span>
+
+          <span class="promo-bar__mobile-view">
+            <span class="promo-bar__mobile-cycle">
+              {%- if block.settings.shipping_text_1 != blank -%}<strong>{{ block.settings.shipping_text_1 }}</strong>{%- endif -%}
+              {%- if block.settings.payment_text_1 != blank -%}
+                <strong>
+                  {%- if block.settings.payment_logo_1 != blank -%}
+                    <img class="promo-bar__mobile-logo" src="{{ block.settings.payment_logo_1 | image_url: width: 80 }}" alt="Addi" loading="lazy">
+                  {%- endif -%}
+                  {{ block.settings.payment_text_1 }}
+                </strong>
+              {%- endif -%}
+              {%- if block.settings.shipping_text_2 != blank -%}<strong>{{ block.settings.shipping_text_2 }}</strong>{%- endif -%}
+              {%- if block.settings.payment_text_2 != blank -%}
+                <strong>
+                  {%- if block.settings.payment_logo_2 != blank -%}
+                    <img class="promo-bar__mobile-logo" src="{{ block.settings.payment_logo_2 | image_url: width: 80 }}" alt="Sistecrédito" loading="lazy">
+                  {%- endif -%}
+                  {{ block.settings.payment_text_2 }}
+                </strong>
+              {%- endif -%}
+              {%- if block.settings.shipping_text_3 != blank -%}<strong>{{ block.settings.shipping_text_3 }}</strong>{%- endif -%}
+              {%- if block.settings.payment_text_3 != blank -%}
+                <strong>
+                  {%- if block.settings.payment_logo_3 != blank -%}
+                    <img class="promo-bar__mobile-logo" src="{{ block.settings.payment_logo_3 | image_url: width: 80 }}" alt="Bold" loading="lazy">
+                  {%- endif -%}
+                  {{ block.settings.payment_text_3 }}
+                </strong>
+              {%- endif -%}
+            </span>
+          </span>
+        </div>
+      {%- when 'social_proof' -%}
+        <a href="{{ block.settings.link }}" class="promo-bar promo-bar--social" {{ block.shopify_attributes }}>
+          <span class="promo-bar__icon">🛒</span>
+          {{ block.settings.text }}
+          <span class="promo-bar__arrow">›</span>
+        </a>
+      {%- when 'promo' -%}
+        <a href="{{ block.settings.link }}" class="promo-bar promo-bar--hot" {{ block.shopify_attributes }}>
+          <span class="promo-bar__icon">🔥</span>
+          {{ block.settings.text }}
+          <span class="promo-bar__arrow">›</span>
+        </a>
+    {%- endcase -%}
+  {%- endfor -%}
+</div>
+
+{% schema %}
+{
+  "name": "Barras promocionales",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 6,
+  "blocks": [
+    {
+      "type": "benefits",
+      "name": "Envío y pagos",
+      "settings": [
+        {
+          "type": "text",
+          "id": "shipping_text",
+          "label": "Texto de envío (se usa si los 3 de abajo están vacíos)",
+          "default": "Envío Gratis"
+        },
+        {
+          "type": "header",
+          "content": "Textos de envío (rotan automáticamente)"
+        },
+        {
+          "type": "text",
+          "id": "shipping_text_1",
+          "label": "Texto 1",
+          "default": "📦 Envío Gratis"
+        },
+        {
+          "type": "text",
+          "id": "shipping_text_2",
+          "label": "Texto 2",
+          "default": "🚀 Pedidos en 24h"
+        },
+        {
+          "type": "text",
+          "id": "shipping_text_3",
+          "label": "Texto 3",
+          "default": "⚡ Promos Flash"
+        },
+        {
+          "type": "text",
+          "id": "payment_methods",
+          "label": "Métodos de pago (texto, se usa si no hay logos)",
+          "default": "Addi · Sistecrédito · Bold"
+        },
+        {
+          "type": "header",
+          "content": "Logos de aliados (rotan automáticamente)"
+        },
+        {
+          "type": "image_picker",
+          "id": "payment_logo_1",
+          "label": "Logo 1 (Addi)"
+        },
+        {
+          "type": "image_picker",
+          "id": "payment_logo_2",
+          "label": "Logo 2 (Sistecrédito)"
+        },
+        {
+          "type": "image_picker",
+          "id": "payment_logo_3",
+          "label": "Logo 3 (Bold)"
+        },
+        {
+          "type": "header",
+          "content": "Texto por logo (rota en sincronía con cada logo)"
+        },
+        {
+          "type": "text",
+          "id": "payment_text_1",
+          "label": "Texto del logo 1 (Addi)",
+          "default": "💸 Paga a 3 meses sin intereses con Addi"
+        },
+        {
+          "type": "text",
+          "id": "payment_text_2",
+          "label": "Texto del logo 2 (Sistecrédito)",
+          "default": "🔥 Tasas bajitas con Sistecrédito"
+        },
+        {
+          "type": "text",
+          "id": "payment_text_3",
+          "label": "Texto del logo 3 (Bold)",
+          "default": "⚡ Paga rápido con Bold y Nequi"
+        },
+        {
+          "type": "text",
+          "id": "payment_subtext",
+          "label": "Texto secundario (solo si no hay logos)",
+          "default": "Compra fácil y segura"
+        }
+      ]
+    },
+    {
+      "type": "social_proof",
+      "name": "Barra de confianza",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Texto",
+          "default": "Miles de clientes ya compraron en DUKI"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Enlace"
+        }
+      ]
+    },
+    {
+      "type": "promo",
+      "name": "Barra de oferta",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Texto",
+          "default": "Hot DUKI • Hasta 70% OFF • Envío Gratis"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Enlace"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Barras promocionales",
+      "blocks": [
+        { "type": "benefits" },
+        { "type": "social_proof" },
+        { "type": "promo" }
+      ]
+    }
+  ]
+}
+{% endschema %}

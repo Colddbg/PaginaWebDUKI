@@ -1,0 +1,257 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant-picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity-selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "custom_liquid_Dxh7Yw": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"happy-customersV2\">\n    <div class=\"avatarsV2\">\n        <img src=\"https://img.freepik.com/free-photo/stylish-african-american-woman-smiling_23-2148770405.jpg\" alt=\"Customer 1\" class=\"avatarV2\" />\n        <img src=\"https://thumbs.dreamstime.com/b/beautiful-african-american-woman-relaxing-outside-happy-middle-aged-smiling-46298787.jpg\" alt=\"Customer 2\" class=\"avatarV2\" />\n        <img src=\"https://media.istockphoto.com/id/1320651997/photo/young-woman-close-up-isolated-studio-portrait.jpg?s=612x612&w=0&k=20&c=lV6pxz-DknISGT2jjiSvUmSaw0hpMDf-dBpT8HTSAUI=\" alt=\"Customer 3\" class=\"avatarV2\" />\n    </div>\n    <span class=\"textV2\">\n        <span style=\"font-weight: 900;\">Maria</span>\n        <span class=\"verifiedV2\">\n            <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/800px-Twitter_Verified_Badge.svg.png\" alt=\"verified badge\">\n        </span>\n        <span> y <strong>758</strong> personas compraron </span>\n    </span>\n</div>\n\n<style>\n    .happy-customersV2 {\n        display: flex;\n        align-items: center;\n        background-color: #ffffff;\n        border-radius: 8px;\n        padding: 10px 15px;\n        font-family: Roboto, sans-serif !important; \n        font-size: 12px;\n        color: #000;\n        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);\n        width: 100%; /* Ocupar todo el ancho */\n        max-width: none; /* Evitar restricciones de tamaño */\n        text-align: left; /* Asegurar que el texto quede bien alineado */\n    }\n\n    .avatarsV2 {\n        display: flex;\n        align-items: center;\n        margin-right: 10px;\n    }\n\n    .avatarV2 {\n        width: 22px;\n        height: 22px;\n        border-radius: 50%;\n        border: 2px solid white;\n        margin-left: -7px;\n        object-fit: cover;\n    }\n\n    .textV2 {\n        font-weight: normal;\n        font-size: 12px;\n        color: #000;\n        display: flex;\n        align-items: center;\n        gap: 4px;\n    }\n\n    .textV2 strong {\n        font-weight: 800;\n        font-family: Roboto, sans-serif;\n    }\n\n    .verifiedV2 {\n        display: flex;\n        align-items: center;\n    }\n\n    .verifiedV2 img {\n        height: 13px;\n        width: 13px;\n        vertical-align: middle;\n        transform: translateY(-1px);\n    }\n</style>"
+          }
+        },
+        "product-inventory": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "description",
+        "variant-picker",
+        "quantity-selector",
+        "buy_buttons",
+        "custom_liquid_Dxh7Yw",
+        "product-inventory"
+      ],
+      "custom_css": [
+        "/* Precio anterior (tachado) en gris */.price-item--compare {color: #888 !important; text-decoration: line-through !important; opacity: 0.7 !important;}",
+        " /* SOLO el precio actual (final) en verde */.price-item--sale {color: #00a64f !important; /* Verde Sistecrédito */ font-weight: 700 !important;}",
+        " /* Evita que el precio regular (sin descuento) se pinte en verde */.price-item--regular:not(.price-item--sale) {color: inherit !important; font-weight: normal !important;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Características principales",
+            "icon": "check_mark",
+            "row_content": "<ul><li>Los audífonos inalámbricos <strong>n65-bt </strong>ofrecen un sonido potente y equilibrado con tecnología bluetooth 5.3. su diseño moderno y ergonómico tipo over-ear brinda comodidad durante largas horas de uso. cuentan con micrófono integrado, controles táctiles y compatibilidad con asistentes de voz, ideales para disfrutar música o contestar llamadas sin cables.</li></ul><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Especificaciones técnicas",
+            "icon": "check_mark",
+            "row_content": "<ul><li>El modelo <strong>n65-bt</strong> incorpora conexión bluetooth 5.3 con un alcance de hasta 10 metros. posee una batería recargable de 300 mah que ofrece entre 10 y 12 horas de reproducción continua. su sonido estéreo hd presenta graves profundos y agudos nítidos. incluye micrófono con cancelación de ruido enc, entrada auxiliar de 3.5 mm y puerto de carga usb tipo c. compatible con dispositivos android, ios, windows y macos.</li></ul><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Incluye en la caja",
+            "icon": "check_mark",
+            "row_content": "<ul><li>El paquete contiene los audífonos <strong>n65-bt</strong>, un cable de carga usb tipo c, un cable auxiliar de 3.5 mm y un manual de usuario.</li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "FLY",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "section",
+        "container_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true,
+        "image": "shopify://shop_images/448.jpg",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_VrrQWh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_KafFUp": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Un mundo de posibilidades</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_3yVUwj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nuestros productos están creados a tu alcance, pensados en tus necesidades y diseñados a tu medida, para que disfrutes tecnología que realmente se adapta a tu vida.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KafFUp",
+        "text_3yVUwj"
+      ],
+      "name": "BANNER REFERENCIA",
+      "settings": {
+        "image": "shopify://shop_images/BANNERS_OMI-14.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "custom_css": [
+        "/* Precio tachado en rojo */.card__information s {color: #e53935 !important;}",
+        " /* Precio sin tachar en verde (el span justo después del tachado) */.card__information s + span {color: #43a047 !important;}",
+        " /* Precio sin tachar en verde cuando NO hay tachado */.card__information span:not(:first-child):not([style*=\"line-through\"]) {color: #43a047 !important;}"
+      ],
+      "settings": {
+        "heading": "También te puede interesar",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_LGCCaQ": {
+      "type": "trust-badges",
+      "settings": {}
+    },
+    "175795996676fff960": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_33pFrB": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_33pFrB"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible-content",
+    "image_with_text_VrrQWh",
+    "related-products",
+    "multicolumn_LGCCaQ",
+    "175795996676fff960"
+  ]
+}

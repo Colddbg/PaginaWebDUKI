@@ -1,0 +1,523 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "ss_tabs_block_zfBQgL": {
+      "type": "ss-tabs-block",
+      "blocks": {
+        "tab_DAgDLt": {
+          "type": "tab",
+          "settings": {
+            "svg_color": "#121212",
+            "icon": "newsletter",
+            "question": "Descripcion",
+            "answer": "<p>El <strong>Termo Multitemperatura TH-50</strong> está diseñado para conservar tus bebidas favoritas a la temperatura ideal durante más tiempo. Su fabricación en acero inoxidable y su práctica asa de transporte lo convierten en el compañero perfecto para la oficina, estudio, gimnasio, viajes y actividades al aire libre.</p><p>❄️🔥 <strong>Mantiene bebidas frías o calientes por horas para acompañarte en cualquier momento del día.</strong></p><p>🥤 <strong>Diseño resistente, moderno y cómodo para un uso diario.</strong></p><h3>Medidas aproximadas:</h3><p>• Altura: 21 cm.<br/>• Diámetro: 8 cm.<br/>• Capacidad: 500 ml aprox.<br/>• Peso: 450 g aprox.</p><h3>Características principales:</h3><p>• Fabricado en acero inoxidable de alta resistencia.<br/>• Conservación térmica para bebidas frías y calientes.<br/>• Asa superior ergonómica para fácil transporte.<br/>• Tapa con cierre seguro y práctico.<br/>• Diseño compacto y moderno.<br/>• Resistente al uso diario.<br/>• Fácil de limpiar y reutilizar.<br/>• Ideal para oficina, universidad, gimnasio, viajes y actividades al aire libre.</p><h3>Contenido del paquete:</h3><p>• 1 Termo Multitemperatura TH-50.<br/>• 1 Tapa con asa integrada.</p>",
+            "answer_html": "{{ product.description }}"
+          }
+        },
+        "tab_LByNMr": {
+          "type": "tab",
+          "settings": {
+            "svg_color": "#121212",
+            "icon": "truck",
+            "question": "Envio",
+            "answer": "<p><strong>Despacho rápido y seguro a todo Colombia.</strong></p><p>Procesamos tu pedido de manera ágil para que lo recibas entre <strong>3 y 5 días hábiles</strong>, dependiendo de la ciudad de destino y la transportadora encargada.</p>",
+            "answer_html": ""
+          }
+        },
+        "tab_Q3TKx6": {
+          "type": "tab",
+          "settings": {
+            "svg_color": "#121212",
+            "icon": "return_arrow",
+            "question": "Garantia",
+            "answer": "<p><strong>Compra con tranquilidad y respaldo.</strong></p><p>Todos nuestros productos cuentan con garantía por defectos de fabricación. La gestión se realizará según las condiciones y tiempos establecidos para cada producto, con acompañamiento y soporte oportuno por parte de nuestro equipo de atención.</p>",
+            "answer_html": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_DAgDLt",
+        "tab_LByNMr",
+        "tab_Q3TKx6"
+      ],
+      "custom_css": [],
+      "name": "SS - Product tabs",
+      "settings": {
+        "tabs_position": "below_buy",
+        "close_other": true,
+        "open_default": false,
+        "subtitle": "",
+        "subtitle_size": 10,
+        "subtitle_size_mobile": 10,
+        "subtitle_height": 150,
+        "title": "",
+        "title_size": 10,
+        "title_size_mobile": 10,
+        "title_height": 150,
+        "question_font_size": 20,
+        "question_font_size_mobile": 20,
+        "question_height": 150,
+        "answer_font_size": 15,
+        "answer_font_size_mobile": 15,
+        "answer_height": 150,
+        "icon_width": 26,
+        "arrow_size": 14,
+        "subtitle_color": "#121212",
+        "title_color": "#121212",
+        "text_color": "#121212",
+        "answer_color": "#121212",
+        "arrow_color": "#121212",
+        "border_color": "#f2f2f2",
+        "background_color": "rgba(0,0,0,0)",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_x_desktop": 0,
+        "padding_x": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "button_padding_y": 10
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "text_MWEByh": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Mantiene tus bebidas frías o calientes por más tiempo. Su diseño moderno y resistente lo convierte en el compañero ideal para cualquier momento del día.</strong>",
+            "text_style": "body"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_liquid_e8DDpT": {
+          "type": "custom_liquid",
+          "name": "Liquid Bold",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div style=\"display:inline-flex;align-items:center;gap:8px;border:1.5px solid #d0d0d0;border-radius:6px;padding:6px 11px;font-size:11px;color:#666;background:#fff;margin-top:8px;font-family:sans-serif;\">\n  <div style=\"display:flex;align-items:center;gap:4px;flex-shrink:0;\">\n    <div style=\"display:flex;align-items:center;gap:3px;\">\n      <div style=\"width:18px;height:18px;border-radius:50%;background:#3b0068;display:flex;align-items:center;justify-content:center;\">\n        <div style=\"width:6px;height:6px;background:#e91e8c;border-radius:1px;\"></div>\n      </div>\n      <span style=\"font-size:11px;font-weight:600;color:#3b0068;letter-spacing:-0.3px;\">Nequi</span>\n    </div>\n    <span style=\"font-size:9px;color:#bbb;\">vía</span>\n    <div style=\"background:linear-gradient(135deg,#1a237e 0%,#c62828 100%);border-radius:50px;padding:2px 7px;display:inline-flex;align-items:center;gap:3px;\">\n      <div style=\"background:#fff;color:#c62828;font-weight:800;font-size:8px;width:11px;height:11px;border-radius:2px;display:inline-flex;align-items:center;justify-content:center;\">b</div>\n      <span style=\"color:#fff;font-weight:700;font-size:10px;letter-spacing:-0.5px;\">old</span>\n    </div>\n  </div>\n  <span style=\"font-size:11px;color:#555;\">Paga con <strong style=\"color:#3b0068\">Nequi</strong> por medio de <strong style=\"color:#c62828\">Bold</strong></span>\n</div>"
+          }
+        },
+        "custom_liquid_Fidryc": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{% comment %}\n  Snippet: sistecredito.liquid\n  Uso: {% render 'sistecredito' %}\n  Pégalo debajo del precio en main-product.liquid o product-template.liquid\n{% endcomment %}\n\n<div class=\"sc-wrap\">\n  <div class=\"sc-bloque\">\n    <div class=\"sc-logo\">\n      <span class=\"sc-azul\">siste</span><span class=\"sc-verde\">crèdito</span>\n    </div>\n    <span class=\"sc-texto\">\n      Paga con <strong class=\"sc-azul\">Sistecrédito</strong> en 3 cuotas.\n    </span>\n  </div>\n</div>\n\n<style>\n  .sc-wrap {\n    margin: 8px 0;\n  }\n  .sc-bloque {\n    display: inline-flex;\n    align-items: center;\n    gap: 8px;\n    border: 1px solid #c8c8c8;\n    border-radius: 6px;\n    padding: 7px 12px;\n    background: #fff;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n  }\n  .sc-logo {\n    font-size: 12px;\n    font-weight: 700;\n    flex-shrink: 0;\n    line-height: 1;\n  }\n  .sc-azul { color: #1a3fa3; }\n  .sc-verde { color: #3aaf2a; }\n  .sc-texto {\n    font-size: 11px;\n    color: #555;\n  }\n</style>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant-picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity-selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "custom_liquid_fY7FRd": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"happy-customersV2\">\n    <div class=\"avatarsV2\">\n        <img src=\"https://img.freepik.com/free-photo/stylish-african-american-woman-smiling_23-2148770405.jpg\" alt=\"Customer 1\" class=\"avatarV2\" />\n        <img src=\"https://thumbs.dreamstime.com/b/beautiful-african-american-woman-relaxing-outside-happy-middle-aged-smiling-46298787.jpg\" alt=\"Customer 2\" class=\"avatarV2\" />\n        <img src=\"https://media.istockphoto.com/id/1320651997/photo/young-woman-close-up-isolated-studio-portrait.jpg?s=612x612&w=0&k=20&c=lV6pxz-DknISGT2jjiSvUmSaw0hpMDf-dBpT8HTSAUI=\" alt=\"Customer 3\" class=\"avatarV2\" />\n    </div>\n    <span class=\"textV2\">\n        <span style=\"font-weight: 900;\">Maria</span>\n        <span class=\"verifiedV2\">\n            <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/800px-Twitter_Verified_Badge.svg.png\" alt=\"verified badge\">\n        </span>\n        <span> y <strong>758</strong> personas compraron </span>\n    </span>\n</div>\n\n<style>\n    .happy-customersV2 {\n        display: flex;\n        align-items: center;\n        background-color: #ffffff;\n        border-radius: 8px;\n        padding: 10px 15px;\n        font-family: Roboto, sans-serif !important; \n        font-size: 12px;\n        color: #000;\n        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);\n        width: 100%; /* Ocupar todo el ancho */\n        max-width: none; /* Evitar restricciones de tamaño */\n        text-align: left; /* Asegurar que el texto quede bien alineado */\n    }\n\n    .avatarsV2 {\n        display: flex;\n        align-items: center;\n        margin-right: 10px;\n    }\n\n    .avatarV2 {\n        width: 22px;\n        height: 22px;\n        border-radius: 50%;\n        border: 2px solid white;\n        margin-left: -7px;\n        object-fit: cover;\n    }\n\n    .textV2 {\n        font-weight: normal;\n        font-size: 12px;\n        color: #000;\n        display: flex;\n        align-items: center;\n        gap: 4px;\n    }\n\n    .textV2 strong {\n        font-weight: 800;\n        font-family: Roboto, sans-serif;\n    }\n\n    .verifiedV2 {\n        display: flex;\n        align-items: center;\n    }\n\n    .verifiedV2 img {\n        height: 13px;\n        width: 13px;\n        vertical-align: middle;\n        transform: translateY(-1px);\n    }\n</style>"
+          }
+        },
+        "product-inventory": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "text_MWEByh",
+        "price",
+        "custom_liquid_e8DDpT",
+        "custom_liquid_Fidryc",
+        "description",
+        "variant-picker",
+        "quantity-selector",
+        "buy_buttons",
+        "custom_liquid_fY7FRd",
+        "product-inventory"
+      ],
+      "custom_css": [
+        "/* Precio anterior (tachado) en gris */.price-item--compare {color: #888 !important; text-decoration: line-through !important; opacity: 0.7 !important;}",
+        " /* SOLO el precio actual (final) en verde */.price-item--sale {color: #00a64f !important; /* Verde Sistecrédito */ font-weight: 700 !important;}",
+        " /* Evita que el precio regular (sin descuento) se pinte en verde */.price-item--regular:not(.price-item--sale) {color: inherit !important; font-weight: normal !important;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Características principales",
+            "icon": "check_mark",
+            "row_content": "<ul><li>El termo <strong>TH-50</strong> ES ofrece un diseño elegante y funcional con acabado metálico de alta calidad. Mantiene las bebidas frías o calientes por más tiempo y cuenta con tapa hermética a prueba de fugas. Ideal para el trabajo, gimnasio o actividades al aire libre.</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Especificaciones técnicas",
+            "icon": "check_mark",
+            "row_content": "<ul><li>El modelo <strong>TH-50</strong> está fabricado en acero inoxidable con aislamiento de doble pared. Tiene capacidad de 500 ml y tapa de presión con sistema antiderrames. Su estructura resistente y ligera facilita el transporte y garantiza durabilidad.</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Incluye en la caja",
+            "icon": "check_mark",
+            "row_content": "<ul><li>El paquete contiene un termo <strong>TH-50</strong> ES con tapa hermética y manual de uso.</li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "FLY",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "section",
+        "container_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true,
+        "image": "shopify://shop_images/Diseno_sin_titulo_1.jpg",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "También te puede interesar",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ss_testimonial_8_icJMmH": {
+      "type": "ss-testimonial-8",
+      "blocks": {
+        "testimonials_9YgTjE": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "¡Me encantó mi compra! 😍",
+            "text": "Hoy en día es difícil encontrar tiendas en línea que ofrezcan una experiencia tan completa. La compra fue rápida, la información del pedido siempre estuvo disponible y el producto llegó en excelentes condiciones. Me sentí acompañado durante todo el proceso y eso genera mucha confianza.",
+            "author_date": ""
+          }
+        },
+        "testimonials_E8CAzq": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Compraré de nuevo 💖",
+            "text": "Lo que más me gustó fue la atención. Me respondieron rápido mis preguntas y el proceso de compra fue muy fácil. Se nota que se preocupan por sus clientes cuando uno compra, me encanta",
+            "author_date": ""
+          }
+        },
+        "testimonials_AakDb8": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Muy recomendados ⭐",
+            "text": "La experiencia fue muy positiva de principio a fin. El proceso de compra fue sencillo, la atención fue rápida cuando tuve algunas preguntas y el seguimiento del pedido fue constante. Cuando recibí el producto pude comprobar que era exactamente como se mostraba en las imágenes. Sin duda fue una compra acertada y volvería a confiar en esta tienda.",
+            "author_date": ""
+          }
+        },
+        "testimonials_fVNKrD": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Superó mis expectativas ✨",
+            "text": "Hoy en día es importante comprar en lugares que generen seguridad, y aquí encontré justamente eso. Todo estuvo muy bien organizado, recibí actualizaciones sobre mi pedido y la entrega se realizó sin inconvenientes. Además, el producto llegó en excelentes condiciones y cumplió con todas mis expectativas. Recomiendo totalmente esta experiencia.",
+            "author_date": ""
+          }
+        },
+        "testimonials_aDtNHp": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Confianza total 🙌",
+            "text": "Lo que más me gustó fue sentir que había un acompañamiento durante toda la compra. Desde la confirmación del pedido hasta la entrega final, siempre tuve información disponible y respuestas oportunas. El producto llegó tal como se describía y en perfectas condiciones. Da gusto comprar en una tienda que realmente se preocupa por sus clientes.",
+            "author_date": ""
+          }
+        },
+        "testimonials_JiTNJn": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Todo salió perfecto 🚚",
+            "text": "La compra fue mucho más fácil de lo que imaginaba. Todo el proceso estuvo bien explicado y el pedido llegó dentro del plazo indicado. El producto cumplió con lo prometido y la calidad del servicio fue excelente. Sin duda es una tienda que transmite confianza y profesionalismo en cada etapa de la compra.",
+            "author_date": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_9YgTjE",
+        "testimonials_E8CAzq",
+        "testimonials_AakDb8",
+        "testimonials_fVNKrD",
+        "testimonials_aDtNHp",
+        "testimonials_JiTNJn"
+      ],
+      "name": "SS - Testimonial #8",
+      "settings": {
+        "heading": "¿Aún tienes dudas? Nuestros clientes te las resuelven 😊",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 30,
+        "heading_size_mobile": 22,
+        "heading_height": 80,
+        "content_align": "center",
+        "rating_text_hide": false,
+        "rating_text": "Descubre por qué nuestros clientes nos califican con",
+        "rating_text_custom": false,
+        "rating_text_font": "josefin_sans_n4",
+        "rating_text_size": 24,
+        "rating_text_size_mobile": 14,
+        "rating_text_height": 130,
+        "rating_text_mt": 16,
+        "rating_hide": false,
+        "rating": 4.5,
+        "stars_count": 5,
+        "stars_size": 28,
+        "stars_size_mobile": 24,
+        "stars_gap": 5,
+        "text": "<p>Mas de <strong>900 </strong>experiencias guardadas</p>",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 20,
+        "text_size_mobile": 16,
+        "text_advanced": false,
+        "text_height": 130,
+        "text_mt": 16,
+        "slider_width": 90,
+        "slider_view": 3,
+        "slider_view_mobile": 1.2,
+        "slider_advanced": true,
+        "slider_gap": 20,
+        "slider_gap_mobile": 20,
+        "slider_mt": 40,
+        "card_advanced": true,
+        "card_padding_vertical": 32,
+        "card_padding_vertical_mobile": 24,
+        "card_padding_horizontal": 40,
+        "card_padding_horizontal_mobile": 24,
+        "card_radius": 36,
+        "card_border_thickness": 2,
+        "card_align": "center",
+        "card_align_mobile": "center",
+        "card_shadow": true,
+        "card_heading_custom": false,
+        "card_heading_font": "josefin_sans_n4",
+        "card_heading_size": 24,
+        "card_heading_size_mobile": 20,
+        "card_heading_advanced": false,
+        "card_heading_height": 130,
+        "card_heading_mt": 16,
+        "card_text_custom": false,
+        "card_text_font": "josefin_sans_n4",
+        "card_text_size": 14,
+        "card_text_size_mobile": 14,
+        "card_text_advanced": false,
+        "card_text_height": 150,
+        "card_text_mt": 16,
+        "card_text_more": "Leer completo",
+        "card_text_less": "Leer menos",
+        "card_count_words": 20,
+        "card_author_date_text_custom": false,
+        "card_author_date_text_font": "josefin_sans_n4",
+        "card_author_date_text_size": 16,
+        "card_author_date_text_size_mobile": 16,
+        "card_author_date_text_advanced": false,
+        "card_author_date_text_height": 130,
+        "card_author_date_text_mt": 16,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "arrow_size": 50,
+        "arrow_size_mobile": 50,
+        "arrow_icon_size": 28,
+        "arrow_icon_size_mobile": 28,
+        "arrow_border_thickness": 0,
+        "dots_show_desktop": false,
+        "dots_show_mobile": false,
+        "dots_size": 12,
+        "dots_size_mobile": 16,
+        "button": "",
+        "button_url": "",
+        "new_tab": false,
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 16,
+        "button_size_mobile": 14,
+        "button_advanced": false,
+        "button_height": 100,
+        "button_padding_vertical": 20,
+        "button_padding_horizontal": 16,
+        "button_radius": 8,
+        "button_border_thickness": 0,
+        "button_mt": 24,
+        "button_align": "center",
+        "button_color": "#ffffff",
+        "button_hover_color": "#ffffff",
+        "button_bg_color": "#121212",
+        "button_bg_hover_color": "#121212",
+        "button_border_color": "#121212",
+        "button_border_hover_color": "#121212",
+        "card_heading_color": "#121212",
+        "card_text_color": "#121212",
+        "card_author_date_text_color": "#121212",
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#121212",
+        "card_shadow_color": "#00b67a",
+        "arrow_color": "#121212",
+        "arrow_hover_color": "#121212",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#121212",
+        "arrow_border_hover_color": "#121212",
+        "dots_color": "#121212",
+        "stars_color": "#ffffff",
+        "stars_bg_color": "#fcca2c",
+        "stars_bg_half_color": "#dddddd",
+        "heading_color": "#ffffff",
+        "rating_text_color": "#ffffff",
+        "text_color": "#ffffff",
+        "background_style": "gradient",
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, rgba(229, 0, 126, 1), rgba(255, 255, 255, 1) 100%)",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "width": "page",
+        "content_width": 1200,
+        "border_thickness": 0,
+        "lazy": true
+      },
+      "disabled": true
+    },
+    "multicolumn_P3NVa8": {
+      "type": "trust-badges",
+      "settings": {}
+    },
+    "175795996676fff960": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_K3BwzY": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_K3BwzY"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "ss_tabs_block_zfBQgL",
+    "main",
+    "collapsible-content",
+    "related-products",
+    "ss_testimonial_8_icJMmH",
+    "multicolumn_P3NVa8",
+    "175795996676fff960"
+  ]
+}

@@ -1,0 +1,70 @@
+{{ 'announcement-ticker.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign messages = section.blocks | where: 'type', 'message'
+-%}
+
+{%- if messages.size > 0 -%}
+  <div class="announcement-ticker" {{ section.shopify_attributes }}>
+    <div class="announcement-ticker__track">
+      <div class="announcement-ticker__group">
+        {%- for block in messages -%}
+          <span class="announcement-ticker__item" {{ block.shopify_attributes }}>
+            <span class="announcement-ticker__icon" aria-hidden="true">{{ block.settings.icon }}</span>
+            {{ block.settings.text }}
+          </span>
+        {%- endfor -%}
+      </div>
+      <div class="announcement-ticker__group" aria-hidden="true">
+        {%- for block in messages -%}
+          <span class="announcement-ticker__item">
+            <span class="announcement-ticker__icon" aria-hidden="true">{{ block.settings.icon }}</span>
+            {{ block.settings.text }}
+          </span>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Ticker de confianza",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 10,
+  "settings": [],
+  "blocks": [
+    {
+      "type": "message",
+      "name": "Mensaje",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Ícono / emoji",
+          "default": "⭐"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Texto",
+          "default": "Reembolso garantizado"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ticker de confianza",
+      "blocks": [
+        { "type": "message", "settings": { "icon": "⭐", "text": "Reembolso garantizado" } },
+        { "type": "message", "settings": { "icon": "✅", "text": "Pagos 100% seguros" } },
+        { "type": "message", "settings": { "icon": "🚚", "text": "Envío a todo Colombia" } },
+        { "type": "message", "settings": { "icon": "💬", "text": "Atención personalizada" } },
+        { "type": "message", "settings": { "icon": "🔥", "text": "Miles de clientes felices" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

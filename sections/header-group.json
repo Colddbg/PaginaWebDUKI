@@ -1,0 +1,318 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement_ticker_1": {
+      "type": "announcement-ticker",
+      "blocks": {
+        "message_1": {
+          "type": "message",
+          "settings": {
+            "icon": "⭐",
+            "text": "Reembolso garantizado"
+          }
+        },
+        "message_2": {
+          "type": "message",
+          "settings": {
+            "icon": "✅",
+            "text": "Pagos 100% seguros"
+          }
+        },
+        "message_3": {
+          "type": "message",
+          "settings": {
+            "icon": "🚚",
+            "text": "Envío a todo Colombia"
+          }
+        },
+        "message_4": {
+          "type": "message",
+          "settings": {
+            "icon": "💬",
+            "text": "Atención personalizada"
+          }
+        },
+        "message_5": {
+          "type": "message",
+          "settings": {
+            "icon": "🔥",
+            "text": "Miles de clientes felices"
+          }
+        }
+      },
+      "block_order": [
+        "message_1",
+        "message_2",
+        "message_3",
+        "message_4",
+        "message_5"
+      ],
+      "settings": {}
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+        ".header__icon .icon path,.header__icon .icon{stroke:currentColor!important;stroke-width:1.5!important;}"
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "mobile_logo_position": "center",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "always",
+        "show_line_separator": false,
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "scheme-1",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "enable_customer_avatar": true,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ss_header_7_VWkXha": {
+      "type": "ss-header-7",
+      "blocks": {
+        "menu_item_mB8ai7": {
+          "type": "menu_item",
+          "settings": {
+            "text": "Hogar",
+            "url": "",
+            "submenu": "hogar",
+            "collections": [],
+            "collection_title": true,
+            "image": "shopify://shop_images/PROMOCIONES-03_jpg.jpg",
+            "title": "¡Freidora en combo!",
+            "first_url": "shopify://products/airfryer-af-010-cocina-mas-saludable-rapida-y-crujiente-sin-aceite",
+            "second_image": "shopify://shop_images/MENU_1080_x_1920_px_2048_x_2048_px.jpg",
+            "second_title": "¡Marca FLY!",
+            "second_url": "shopify://collections/parlante-s-22",
+            "third_image": "shopify://shop_images/freepik__se-un-experto-en-crear-imgenes-quiero-que-esa-foto__99350.jpg",
+            "third_title": "¡Lo mejor en cocina!",
+            "third_url": "shopify://collections/parlante-s-22"
+          }
+        },
+        "menu_item_tRPmyB": {
+          "type": "menu_item",
+          "settings": {
+            "text": "Tecnologia",
+            "url": "",
+            "submenu": "tecnologia",
+            "collections": [],
+            "collection_title": true,
+            "title": "",
+            "first_url": "",
+            "second_title": "",
+            "second_url": "",
+            "third_title": "",
+            "third_url": ""
+          }
+        },
+        "menu_item_RHbz8P": {
+          "type": "menu_item",
+          "settings": {
+            "text": "Variedades",
+            "url": "",
+            "submenu": "variedades",
+            "collections": [],
+            "collection_title": true,
+            "image": "shopify://shop_images/PROMOCIONES-05_jpg_621a37fd-db88-4d9c-904c-810d063397a3.jpg",
+            "title": "¡Combo para tu baño!",
+            "first_url": "shopify://products/kit-dispensador-de-jabon-a-b-280-organizacion-elegante-para-tu-bano",
+            "second_image": "shopify://shop_images/app-bss-banner-popup_0496fa17-a95c-4886-9b55-83691d2f2c1e_Capturadepantalla2026-05-14182407.png",
+            "second_title": "¿Te gusta Maquillarte?",
+            "second_url": "shopify://products/cosmetiquera-acp-180-organiza-tu-estilo-con-comodidad-y-elegancia",
+            "third_image": "shopify://shop_images/PROMOCIONES-03.jpg_1.jpg",
+            "third_title": "¿Vas de viaje?",
+            "third_url": "shopify://products/maleta-de-viaje-gtg-670-diseno-compacto-colorido-y-facil-de-transportar"
+          }
+        },
+        "menu_item_pNNbtX": {
+          "type": "menu_item",
+          "settings": {
+            "text": "Belleza",
+            "url": "",
+            "submenu": "belleza",
+            "collections": [],
+            "collection_title": true,
+            "title": "",
+            "first_url": "",
+            "second_title": "",
+            "second_url": "",
+            "third_title": "",
+            "third_url": ""
+          }
+        },
+        "menu_item_xDJhdG": {
+          "type": "menu_item",
+          "settings": {
+            "text": "Hidratación",
+            "url": "",
+            "submenu": "hidratacion",
+            "collections": [],
+            "collection_title": true,
+            "title": "",
+            "first_url": "",
+            "second_title": "",
+            "second_url": "",
+            "third_title": "",
+            "third_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_mB8ai7",
+        "menu_item_tRPmyB",
+        "menu_item_RHbz8P",
+        "menu_item_pNNbtX",
+        "menu_item_xDJhdG"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "SS - Header #7",
+      "settings": {
+        "show_type": "scroll_up",
+        "transparent_bg": "none",
+        "body_gap": 70,
+        "body_gap_mobile": 22,
+        "logo": "shopify://shop_images/LOGO_DUKI_AUXILIARES_Mesa_de_trabajo_1_copia_5_3dd045bb-aa5d-4746-85b8-e73349115789.png",
+        "logo_mobile": "shopify://shop_images/LOGO_DUKI_AUXILIARES_Mesa_de_trabajo_1_copia_5_3dd045bb-aa5d-4746-85b8-e73349115789.png",
+        "logo_width": 80,
+        "logo_width_mobile": 90,
+        "name_custom": false,
+        "name_font": "sofia_sans_n4",
+        "name_size": 24,
+        "name_size_mobile": 20,
+        "name_height": 100,
+        "menu": "main-menu",
+        "list_gap": 40,
+        "list_gap_mobile": 0,
+        "link_custom": false,
+        "link_font": "sofia_sans_n4",
+        "link_size": 19,
+        "link_size_mobile": 18,
+        "link_height": 130,
+        "submenu_padding_bottom": 18,
+        "submenu_gap": 6,
+        "menu_icon_size_mobile": 20,
+        "mobile_menu_text": "<p>✨ Encuentra productos prácticos, modernos y al mejor precio</p>",
+        "mobile_menu_text_custom": false,
+        "mobile_menu_text_font": "sofia_sans_n4",
+        "mobile_menu_text_size": 16,
+        "mobile_menu_text_height": 150,
+        "mobile_menu_text_align": "center",
+        "mobile_menu_button": "OFERTAS",
+        "mobile_menu_button_url": "shopify://collections/categoria-termos-web",
+        "mobile_menu_button_custom": false,
+        "mobile_menu_button_font": "sofia_sans_n4",
+        "mobile_menu_button_size": 14,
+        "mobile_menu_button_height": 100,
+        "mobile_menu_button_padding_vertical": 14,
+        "mobile_menu_button_padding_horizontal": 36,
+        "mobile_menu_button_radius": 100,
+        "mobile_menu_button_border_thickness": 3,
+        "mobile_menu_button_style": "non_outline",
+        "collection_gap": 8,
+        "collection_image_radius": 80,
+        "collection_image_border_thickness": 0,
+        "collection_image_ratio": "square",
+        "collection_image_hover": false,
+        "collection_title_custom": false,
+        "collection_title_font": "sofia_sans_n4",
+        "collection_title_size": 19,
+        "collection_title_height": 130,
+        "collection_title_mt": 22,
+        "collection_title_align": "center",
+        "right_gap": 32,
+        "right_gap_mobile": 10,
+        "button": "OFERTAS",
+        "button_url": "shopify://collections/variedades",
+        "button_custom": false,
+        "button_font": "sofia_sans_n7",
+        "button_size": 17,
+        "button_height": 100,
+        "button_padding_vertical": 4,
+        "button_padding_horizontal": 10,
+        "button_radius": 100,
+        "button_border_thickness": 3,
+        "button_style": "outline",
+        "right_link_custom": false,
+        "right_link_font": "sofia_sans_n4",
+        "right_link_size": 14,
+        "right_link_height": 130,
+        "icon_size": 20,
+        "icon_size_mobile": 24,
+        "use_search": true,
+        "search_text": "Buscar",
+        "search_icon_desktop": true,
+        "search_menu_mobile": false,
+        "use_account": true,
+        "account_text": "Ingresa",
+        "account_icon_desktop": true,
+        "account_menu_mobile": true,
+        "cart_text": "Cart",
+        "cart_icon_desktop": true,
+        "link_color": "#000000",
+        "link_hover_color": "#666666",
+        "link_hero_color": "#ffffff",
+        "submenu_link_color": "#000000",
+        "submenu_link_hover_color": "#666666",
+        "mobile_menu_text_color": "#000000",
+        "mobile_menu_divider_color": "#000000",
+        "collection_title_color": "#000000",
+        "collection_image_border_color": "#000000",
+        "name_color": "#000000",
+        "name_hover_color": "#666666",
+        "name_hero_color": "#ffffff",
+        "right_link_color": "#000000",
+        "right_link_hover_color": "#666666",
+        "right_link_hero_color": "#ffffff",
+        "button_color": "#ffffff",
+        "button_hover_color": "#ffffff",
+        "button_over_hero_color": "#ffffff",
+        "button_bg_color": "rgba(0,0,0,0)",
+        "button_bg_hover_color": "#ff0b0b",
+        "button_bg_over_hero_color": "#e5007e",
+        "button_border_color": "#000000",
+        "button_border_hover_color": "#000000",
+        "button_border_over_hero_color": "#ffffff",
+        "mobile_menu_button_color": "#ffffff",
+        "mobile_menu_button_bg_color": "#ff0b0b",
+        "mobile_menu_button_border_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "border_color_mobile": "#ffffff",
+        "margin_top": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 6,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 1400,
+        "border_thickness": 0,
+        "border_bottom": true,
+        "section_radius": 2,
+        "lazy": true
+      }
+    }
+  },
+  "order": [
+    "announcement_ticker_1",
+    "header",
+    "ss_header_7_VWkXha"
+  ]
+}

@@ -1,0 +1,115 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "1782939598b637dcd5": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "footer_custom_1": {
+      "type": "footer-custom",
+      "blocks": {
+        "accordion_tienda": {
+          "type": "accordion",
+          "settings": {
+            "title": "Tienda",
+            "menu": ""
+          }
+        },
+        "accordion_soporte": {
+          "type": "accordion",
+          "settings": {
+            "title": "Soporte",
+            "menu": "formas-de-pago"
+          }
+        },
+        "accordion_nosotros": {
+          "type": "accordion",
+          "settings": {
+            "title": "Nosotros",
+            "menu": "nosotros"
+          }
+        },
+        "accordion_politicas": {
+          "type": "accordion",
+          "settings": {
+            "title": "Políticas",
+            "menu": "",
+            "text": "<p><a href=\"/policies/privacy-policy\" title=\"Privacy Policy\">Políticas de privacidad</a></p><p><a href=\"/blogs/noticias/politica-de-garantia\" target=\"_blank\" title=\"Política de Garantía\">Política de Garantía</a></p><p><a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">Cambios y devoluciones</a></p><p><a href=\"/policies/terms-of-service\" target=\"_blank\" title=\"Terms of Service\">Términos y condiciones</a></p>"
+          }
+        },
+      },
+      "block_order": [
+        "accordion_tienda",
+        "accordion_soporte",
+        "accordion_nosotros",
+        "accordion_politicas"
+      ],
+      "settings": {
+        "logo": "shopify://shop_images/LOGO_DUKI_AUXILIARES_Mesa_de_trabajo_1_copia_5_3dd045bb-aa5d-4746-85b8-e73349115789.png",
+        "logo_width": 120,
+        "use_newsletter": true,
+        "newsletter_heading": "¡Activa tus ofertas!",
+        "newsletter_subtext": "<p>Suscríbete a nuestro correo y entérate de nuestras novedades y ofertas.</p>",
+        "newsletter_placeholder": "Correo electrónico",
+        "newsletter_button_label": "Registrarse",
+        "newsletter_thanks_text": "¡Gracias por suscribirte!",
+        "show_social": true,
+        "instagram": "https://www.instagram.com/tiendasduki/",
+        "tiktok": "https://www.tiktok.com/@tiendasduki",
+        "whatsapp": "https://wa.link/h3pzn5",
+        "facebook": "",
+        "copyright_text": "<p>© 2026, Duki</p>",
+        "policies_link_label": "Términos y políticas",
+        "policies_link_url": "/policies/terms-of-service",
+        "background_color": "#f2f2f2"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "brand_information_iKLqM8": {
+          "type": "brand_information",
+          "disabled": true,
+          "settings": {
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "brand_information_iKLqM8"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-bd357cf7-26e4-4a2e-8345-67bf37bbd162",
+        "newsletter_enable": true,
+        "newsletter_heading": "¡Registrate y accede a ofertas especiales!",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "1782939598b637dcd5",
+    "footer_custom_1",
+    "footer"
+  ]
+}
