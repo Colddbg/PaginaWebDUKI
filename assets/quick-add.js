@@ -5,6 +5,7 @@ if (!customElements.get('quick-add-modal')) {
       constructor() {
         super();
         this.modalContent = this.querySelector('[id^="QuickAddInfo-"]');
+        this.responseCache = new Map();
 
         this.addEventListener('product-info:loaded', ({ target }) => {
           target.addPreProcessCallback(this.preprocessHTML.bind(this));
@@ -16,6 +17,11 @@ if (!customElements.get('quick-add-modal')) {
         if (cartNotification) cartNotification.setActiveElement(this.openedBy);
         this.modalContent.innerHTML = '';
 
+        if (this._buyNowObserver) {
+          this._buyNowObserver.disconnect();
+          this._buyNowObserver = null;
+        }
+
         if (preventFocus) this.openedBy = null;
         super.hide();
       }
@@ -25,8 +31,18 @@ if (!customElements.get('quick-add-modal')) {
         opener.classList.add('loading');
         opener.querySelector('.loading__spinner').classList.remove('hidden');
 
-        fetch(opener.getAttribute('data-product-url'))
-          .then((response) => response.text())
+        const productUrl = opener.getAttribute('data-product-url');
+        const cached = this.responseCache.get(productUrl);
+        const responseTextPromise = cached
+          ? Promise.resolve(cached)
+          : fetch(productUrl)
+              .then((response) => response.text())
+              .then((responseText) => {
+                this.responseCache.set(productUrl, responseText);
+                return responseText;
+              });
+
+        responseTextPromise
           .then((responseText) => {
             const responseHTML = new DOMParser().parseFromString(responseText, 'text/html');
             const productElement = responseHTML.querySelector('product-info');
@@ -48,6 +64,7 @@ if (!customElements.get('quick-add-modal')) {
             safeRun(() => this.groupOptionsAndQuantity());
             safeRun(() => this.addStockScarcity(opener));
             safeRun(() => this.addButtonsGlowBar());
+            safeRun(() => this.watchForBuyNowButton());
 
             if (window.Shopify && Shopify.PaymentButton) {
               Shopify.PaymentButton.init();
@@ -187,11 +204,12 @@ if (!customElements.get('quick-add-modal')) {
         if (!buttons) return;
 
         const productUrl = opener.getAttribute('data-product-url') || '';
-        let seed = 0;
+        let hash = 5381;
         for (let i = 0; i < productUrl.length; i++) {
-          seed = (seed * 31 + productUrl.charCodeAt(i)) % 1000;
+          hash = (hash * 33) ^ productUrl.charCodeAt(i);
         }
-        const stockLeft = 3 + (seed % 13);
+        hash = Math.abs(hash);
+        const stockLeft = 4 + (hash % 15);
         const percentLeft = Math.max(20, 100 - stockLeft * 5);
 
         const wrapper = document.createElement('div');
@@ -213,6 +231,43 @@ if (!customElements.get('quick-add-modal')) {
         const bar = document.createElement('div');
         bar.className = 'quick-add-modal__buttons-glow-bar';
         buttons.parentElement.insertBefore(bar, buttons);
+      }
+
+      watchForBuyNowButton() {
+        if (this._buyNowObserver) {
+          this._buyNowObserver.disconnect();
+          this._buyNowObserver = null;
+        }
+
+        const buttons = this.modalContent.querySelector('.product-form__buttons');
+        if (!buttons) return;
+
+        const tryPlaceButton = () => {
+          const buyNowButton = this.modalContent.querySelector('._rsi-buy-now-button');
+          if (buyNowButton && buyNowButton.parentElement !== buttons) {
+            buttons.appendChild(buyNowButton);
+            return true;
+          }
+          return !!buyNowButton;
+        };
+
+        if (tryPlaceButton()) return;
+
+        const observer = new MutationObserver(() => {
+          if (tryPlaceButton()) {
+            observer.disconnect();
+            this._buyNowObserver = null;
+          }
+        });
+        observer.observe(this.modalContent, { childList: true, subtree: true });
+        this._buyNowObserver = observer;
+
+        setTimeout(() => {
+          if (this._buyNowObserver === observer) {
+            observer.disconnect();
+            this._buyNowObserver = null;
+          }
+        }, 8000);
       }
 
       preprocessHTML(productElement) {

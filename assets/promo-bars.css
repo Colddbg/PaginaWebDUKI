@@ -337,18 +337,56 @@
   }
 }
 
-/* Bloque social / confianza */
-.promo-bar--social {
-  background: linear-gradient(90deg, #a4145a, #e5007e);
-  color: #fff;
+/* Bloque rotativo: confianza + oferta, en rojo */
+.promo-bar--rotator {
+  position: relative;
+  min-height: 40px;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(90deg, #e10000, #ff4b2b);
 }
 
-/* Bloque de oferta */
-.promo-bar--hot {
-  background: linear-gradient(90deg, #e10000, #ff4b2b);
+.promo-bar-rotator__item {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
   color: #fff;
+  text-decoration: none;
   font-size: 15px;
   font-weight: 700;
+  opacity: 0;
+  animation: promo-bar-rotator-cycle 8s ease-in-out infinite;
+}
+
+@keyframes promo-bar-rotator-cycle {
+  0%,
+  4% {
+    opacity: 0;
+  }
+  8%,
+  42% {
+    opacity: 1;
+  }
+  46%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .promo-bar-rotator__item {
+    animation: none;
+    position: static;
+    opacity: 1;
+  }
+
+  .promo-bar-rotator__item:not(:first-child) {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -362,7 +400,12 @@
     font-size: 15px;
   }
 
-  .promo-bar--hot {
+  .promo-bar--rotator {
+    min-height: 44px;
+  }
+
+  .promo-bar-rotator__item {
+    padding: 12px 20px;
     font-size: 16px;
   }
 
@@ -420,8 +463,9 @@
     font-size: 10px;
   }
 
-  .promo-bar--hot {
+  .promo-bar-rotator__item {
     font-size: 13px;
+    padding: 9px 12px;
   }
 
   .promo-bar__divider {

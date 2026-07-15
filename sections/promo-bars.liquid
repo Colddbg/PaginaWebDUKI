@@ -1,6 +1,10 @@
 {{ 'promo-bars.css' | asset_url | stylesheet_tag }}
 
 <div class="promo-bars page-width">
+  {%- assign rotating_blocks = section.blocks | where: 'type', 'social_proof' -%}
+  {%- assign promo_blocks = section.blocks | where: 'type', 'promo' -%}
+  {%- assign rotating_blocks = rotating_blocks | concat: promo_blocks -%}
+
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when 'benefits' -%}
@@ -91,20 +95,25 @@
             </span>
           </span>
         </div>
-      {%- when 'social_proof' -%}
-        <a href="{{ block.settings.link }}" class="promo-bar promo-bar--social" {{ block.shopify_attributes }}>
-          <span class="promo-bar__icon">🛒</span>
-          {{ block.settings.text }}
-          <span class="promo-bar__arrow">›</span>
-        </a>
-      {%- when 'promo' -%}
-        <a href="{{ block.settings.link }}" class="promo-bar promo-bar--hot" {{ block.shopify_attributes }}>
-          <span class="promo-bar__icon">🔥</span>
-          {{ block.settings.text }}
-          <span class="promo-bar__arrow">›</span>
-        </a>
     {%- endcase -%}
   {%- endfor -%}
+
+  {%- if rotating_blocks.size > 0 -%}
+    <div class="promo-bar promo-bar--rotator">
+      {%- for block in rotating_blocks -%}
+        <a
+          href="{{ block.settings.link }}"
+          class="promo-bar-rotator__item"
+          style="animation-delay: -{{ forloop.index0 | times: 4 }}s;"
+          {{ block.shopify_attributes }}
+        >
+          <span class="promo-bar__icon">{% if block.type == 'social_proof' %}🛒{% else %}🔥{% endif %}</span>
+          {{ block.settings.text }}
+          <span class="promo-bar__arrow">›</span>
+        </a>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
 </div>
 
 {% schema %}

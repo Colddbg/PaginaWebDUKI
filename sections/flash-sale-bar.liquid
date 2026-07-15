@@ -1,0 +1,84 @@
+{{ 'flash-sale-bar.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'flash-sale-bar.js' | asset_url }}" defer="defer"></script>
+
+<div class="page-width">
+  <div class="flash-sale-bar" data-flash-sale-bar data-end-date="{{ section.settings.fixed_end_date | escape }}" {{ section.shopify_attributes }}>
+    <div class="flash-sale-bar__inner">
+      <div class="flash-sale-bar__text">
+        <span class="flash-sale-bar__heading">{{ section.settings.heading }}</span>
+        {%- if section.settings.subheading != blank -%}
+          <span class="flash-sale-bar__subheading">{{ section.settings.subheading }}</span>
+        {%- endif -%}
+      </div>
+
+      <div class="flash-sale-bar__timer-cta">
+        <div class="flash-sale-bar__timer" data-flash-sale-timer aria-live="polite">
+          <div class="flash-sale-bar__timer-unit">
+            <span class="flash-sale-bar__timer-value" data-unit="hours">00</span>
+            <span class="flash-sale-bar__timer-label">h</span>
+          </div>
+          <span class="flash-sale-bar__timer-sep">:</span>
+          <div class="flash-sale-bar__timer-unit">
+            <span class="flash-sale-bar__timer-value" data-unit="minutes">00</span>
+            <span class="flash-sale-bar__timer-label">m</span>
+          </div>
+          <span class="flash-sale-bar__timer-sep">:</span>
+          <div class="flash-sale-bar__timer-unit">
+            <span class="flash-sale-bar__timer-value" data-unit="seconds">00</span>
+            <span class="flash-sale-bar__timer-label">s</span>
+          </div>
+        </div>
+
+        {%- if section.settings.cta_text != blank -%}
+          <a href="{{ section.settings.cta_link | default: '#' }}" class="flash-sale-bar__cta">
+            {{ section.settings.cta_text }}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Barra de oferta flash",
+  "tag": "section",
+  "class": "section section-flash-sale-bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título",
+      "default": "🔥 OFERTA FLASH DE HOY"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subtítulo",
+      "default": "Termina en:"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Texto del botón",
+      "default": "Ver ofertas"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Enlace del botón"
+    },
+    {
+      "type": "text",
+      "id": "fixed_end_date",
+      "label": "Fecha/hora fija de fin (opcional)",
+      "info": "Formato AAAA-MM-DDTHH:MM:SS, por ejemplo 2026-07-20T23:59:59. Si se deja vacío, la cuenta regresiva reinicia cada día a la medianoche."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Barra de oferta flash"
+    }
+  ]
+}
+{% endschema %}

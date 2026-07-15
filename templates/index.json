@@ -136,6 +136,16 @@
       ],
       "settings": {}
     },
+    "flash_sale_bar_1": {
+      "type": "flash-sale-bar",
+      "settings": {
+        "heading": "🔥 OFERTA FLASH DE HOY",
+        "subheading": "Termina en:",
+        "cta_text": "Ver ofertas",
+        "cta_link": "shopify://collections/ofertas-del-mes",
+        "fixed_end_date": ""
+      }
+    },
     "featured_collection_9aKmLC": {
       "type": "featured-collection",
       "custom_css": [
@@ -842,6 +852,7 @@
     "image_banner_Pd3rLQ",
     "custom_liquid_xm9X9C",
     "promo_bars",
+    "flash_sale_bar_1",
     "featured_collection_9aKmLC",
     "collection-list",
     "featured_collection_Tc4zjW",

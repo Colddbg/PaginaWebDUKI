@@ -323,6 +323,14 @@ quick-add-modal .product__column-sticky {
   position: relative;
 }
 
+@media screen and (max-width: 749px) {
+  quick-add-modal .product__media-wrapper {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 750px) {
   quick-add-modal .product:not(.product--no-media) .product__media-wrapper {
     max-width: 45%;
@@ -820,8 +828,41 @@ quick-add-modal .product__title {
 }
 
 @media screen and (max-width: 749px) {
-  .quick-add-modal__price-main { font-size: 2.1rem; }
-  .quick-add-modal__launch-badge { font-size: 0.88rem; padding: 0.5rem 1.1rem; }
+  .quick-add-modal__launch-badge {
+    font-size: 1rem;
+    padding: 0.6rem 1.3rem;
+  }
+
+  .quick-add-modal__trust-row span {
+    font-size: 0.95rem;
+    padding: 0.45rem 0.9rem;
+  }
+
+  .quick-add-modal__price-main {
+    font-size: 2.4rem;
+  }
+
+  .quick-add-modal__price-code {
+    font-size: 1rem;
+  }
+
+  .quick-add-modal__price-compare {
+    font-size: 1.3rem;
+  }
+
+  .quick-add-modal__price-percent {
+    font-size: 1rem;
+    padding: 0.35rem 0.9rem;
+  }
+
+  .quick-add-modal__savings {
+    font-size: 1.1rem;
+    padding: 0.55rem 1.3rem;
+  }
+
+  .quick-add-modal__shipping-note {
+    font-size: 1rem;
+  }
 }
 
 quick-add-modal .price {
@@ -844,9 +885,16 @@ quick-add-modal .price s.price-item {
 }
 
 quick-add-modal .product__description {
-  text-align: center;
-  max-width: 92%;
-  margin: 1rem auto;
+  max-width: 78% !important;
+  margin: 0.6rem auto !important;
+}
+
+quick-add-modal .product__description,
+quick-add-modal .product__description p {
+  text-align: center !important;
+  font-size: 0.75rem !important;
+  line-height: 1.3 !important;
+  color: rgba(var(--color-foreground), 0.65) !important;
 }
 
 quick-add-modal .product-form__input {
@@ -917,6 +965,7 @@ quick-add-modal .quantity__input {
   gap: 1rem;
   max-width: 92%;
   margin: 0 auto 0.8rem;
+  padding-top: 4.5rem;
 }
 
 .quick-add-modal__options-row variant-selects {
