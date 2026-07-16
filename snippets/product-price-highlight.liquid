@@ -1,0 +1,45 @@
+{{ 'product-price-highlight.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign target = product.selected_or_first_available_variant
+  assign highlight_price = target.price
+  assign highlight_compare = target.compare_at_price
+  assign highlight_discount = 0
+  assign highlight_savings = 0
+  if highlight_compare > highlight_price
+    assign highlight_discount = highlight_compare | minus: highlight_price | times: 100.0 | divided_by: highlight_compare | round
+    assign highlight_savings = highlight_compare | minus: highlight_price
+  endif
+-%}
+
+<div class="product-price-highlight quick-add-hidden">
+  <span class="product-price-highlight__badge">🔥 Oferta especial</span>
+
+  <span class="product-price-highlight__shipping-pill">📦 Envío gratis y pago al recibir</span>
+
+  <div class="product-price-highlight__checks">
+    <span>✓ Pago contraentrega</span>
+    <span>✓ Envío gratis</span>
+    <span>✓ Calidad certificada</span>
+  </div>
+
+  <div class="product-price-highlight__price-row">
+    <span class="product-price-highlight__price">{{ highlight_price | money }}</span>
+    {%- if highlight_discount > 0 -%}
+      <s class="product-price-highlight__compare">{{ highlight_compare | money }}</s>
+      <span class="product-price-highlight__percent">-{{ highlight_discount }}%</span>
+    {%- endif -%}
+  </div>
+
+  {%- if highlight_savings > 0 -%}
+    <span class="product-price-highlight__savings">Estás ahorrando {{ highlight_savings | money }}</span>
+  {%- endif -%}
+
+  <p class="product-price-highlight__shipping-note">🚚 Llega en 3 a 6 días hábiles · Pago al recibir</p>
+
+  <ul class="product-price-highlight__benefits">
+    <li>✓ Compra 100% segura y protegida</li>
+    <li>✓ Pagas al recibir, sin sorpresas</li>
+    <li>✓ Miles de clientes satisfechos en Colombia</li>
+  </ul>
+</div>

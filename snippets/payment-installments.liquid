@@ -1,0 +1,40 @@
+{{ 'payment-installments.css' | asset_url | stylesheet_tag }}
+
+<div class="payment-installments quick-add-hidden">
+  <span class="payment-installments__item payment-installments__item--addi" style="animation-delay: 0s;">
+    <span class="payment-installments__logo-circle">
+      <img
+        src="{{ images['magnific_mejora-la-calidad-de-imag_5xhGPFxKxe.png'] | image_url: width: 100 }}"
+        alt="Addi"
+        loading="lazy"
+        width="40"
+        height="40"
+      >
+    </span>
+    Paga a 3 meses sin intereses con <strong>Addi</strong>
+  </span>
+  <span class="payment-installments__item payment-installments__item--sistecredito" style="animation-delay: -2.67s;">
+    <span class="payment-installments__logo-circle">
+      <img
+        src="{{ images['magnific_mejora-la-calidad-de-imag_74kX0R8JAL.png'] | image_url: width: 100 }}"
+        alt="Sistecrédito"
+        loading="lazy"
+        width="40"
+        height="40"
+      >
+    </span>
+    Paga con <strong>Sistecrédito</strong> en 3 cuotas
+  </span>
+  <span class="payment-installments__item payment-installments__item--bold" style="animation-delay: -5.33s;">
+    <span class="payment-installments__logo-circle">
+      <img
+        src="{{ images['magnific_mejora-la-calidad-de-imag_YV9baoVWeC.png'] | image_url: width: 100 }}"
+        alt="Bold"
+        loading="lazy"
+        width="40"
+        height="40"
+      >
+    </span>
+    Paga con <strong>Nequi</strong> por medio de <strong>Bold</strong>
+  </span>
+</div>

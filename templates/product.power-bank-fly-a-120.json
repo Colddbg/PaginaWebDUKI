@@ -150,13 +150,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "custom_liquid_jpa4kk": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<div class=\"happy-customersV2\">\n    <div class=\"avatarsV2\">\n        <img src=\"https://img.freepik.com/free-photo/stylish-african-american-woman-smiling_23-2148770405.jpg\" alt=\"Customer 1\" class=\"avatarV2\" />\n        <img src=\"https://thumbs.dreamstime.com/b/beautiful-african-american-woman-relaxing-outside-happy-middle-aged-smiling-46298787.jpg\" alt=\"Customer 2\" class=\"avatarV2\" />\n        <img src=\"https://media.istockphoto.com/id/1320651997/photo/young-woman-close-up-isolated-studio-portrait.jpg?s=612x612&w=0&k=20&c=lV6pxz-DknISGT2jjiSvUmSaw0hpMDf-dBpT8HTSAUI=\" alt=\"Customer 3\" class=\"avatarV2\" />\n    </div>\n    <span class=\"textV2\">\n        <span style=\"font-weight: 900;\">Maria</span>\n        <span class=\"verifiedV2\">\n            <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/800px-Twitter_Verified_Badge.svg.png\" alt=\"verified badge\">\n        </span>\n        <span> y <strong>758</strong> personas compraron </span>\n    </span>\n</div>\n\n<style>\n    .happy-customersV2 {\n        display: flex;\n        align-items: center;\n        background-color: #ffffff;\n        border-radius: 8px;\n        padding: 10px 15px;\n        font-family: Roboto, sans-serif !important; \n        font-size: 12px;\n        color: #000;\n        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);\n        width: 100%; /* Ocupar todo el ancho */\n        max-width: none; /* Evitar restricciones de tamaño */\n        text-align: left; /* Asegurar que el texto quede bien alineado */\n    }\n\n    .avatarsV2 {\n        display: flex;\n        align-items: center;\n        margin-right: 10px;\n    }\n\n    .avatarV2 {\n        width: 22px;\n        height: 22px;\n        border-radius: 50%;\n        border: 2px solid white;\n        margin-left: -7px;\n        object-fit: cover;\n    }\n\n    .textV2 {\n        font-weight: normal;\n        font-size: 12px;\n        color: #000;\n        display: flex;\n        align-items: center;\n        gap: 4px;\n    }\n\n    .textV2 strong {\n        font-weight: 800;\n        font-family: Roboto, sans-serif;\n    }\n\n    .verifiedV2 {\n        display: flex;\n        align-items: center;\n    }\n\n    .verifiedV2 img {\n        height: 13px;\n        width: 13px;\n        vertical-align: middle;\n        transform: translateY(-1px);\n    }\n</style>"
-          }
-        },
         "product-inventory": {
           "type": "inventory",
           "disabled": true,
@@ -178,7 +171,6 @@
         "variant-picker",
         "quantity-selector",
         "buy_buttons",
-        "custom_liquid_jpa4kk",
         "product-inventory"
       ],
       "custom_css": [

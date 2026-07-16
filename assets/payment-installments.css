@@ -1,0 +1,119 @@
+.payment-installments {
+  position: relative;
+  overflow: hidden;
+  height: 4.6rem;
+  margin: 1rem 0;
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.payment-installments__item {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  padding: 0 1.2rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+  animation: payment-installments-cycle 8s ease-in-out infinite;
+}
+
+.payment-installments__item--addi {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 999px;
+  box-sizing: border-box;
+}
+
+.payment-installments__item--sistecredito {
+  background: #6cb33f;
+}
+
+.payment-installments__item--bold {
+  background: linear-gradient(90deg, #1a237e, #c62828);
+}
+
+.payment-installments__item strong {
+  font-weight: 800;
+}
+
+@keyframes payment-installments-cycle {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  29% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+}
+
+.payment-installments__logo-circle {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.payment-installments__logo-circle img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.payment-installments__logo-text {
+  flex-shrink: 0;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .payment-installments {
+    height: auto;
+    padding: 0.8rem 0;
+  }
+
+  .payment-installments__item {
+    animation: none;
+    position: static;
+    opacity: 1;
+    display: none;
+  }
+
+  .payment-installments__item:first-child {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .payment-installments {
+    height: 4.8rem;
+  }
+
+  .payment-installments__item {
+    font-size: 1.15rem;
+    padding: 0 0.9rem;
+    gap: 0.6rem;
+  }
+
+  .payment-installments__logo-circle {
+    width: 3rem;
+    height: 3rem;
+  }
+}

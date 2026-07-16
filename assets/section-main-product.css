@@ -19,6 +19,86 @@ product-info {
   padding-left: 0;
 }
 
+.product__info-container .product__description,
+.product__info-container .product__text {
+  display: none !important;
+}
+
+.product__info-container .product__title,
+.product__info-container .rating-wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.product__info-container .rating-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.6rem;
+}
+
+
+@media screen and (max-width: 749px) {
+  .product:not(.product--no-media) .product__media-wrapper {
+    max-width: 62%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product-form__input legend {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-form__input fieldset.product-form__input--swatch,
+  .product-form__input fieldset.product-form__input--pill,
+  .product-form__input .block-swatch-list {
+    justify-content: center;
+  }
+
+  .product-form__quantity {
+    text-align: center;
+  }
+
+  .product-form__quantity .form__label {
+    text-align: center;
+    width: 100%;
+  }
+
+  .product-options-row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .product-options-row variant-selects {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .product-options-row .product-form__quantity {
+    flex: 0 0 auto;
+    margin: 0;
+  }
+
+  .product-form__quantity .quantity {
+    width: 8rem;
+    min-height: 3.4rem;
+    margin: 0 auto;
+  }
+
+  .product-form__quantity .quantity__button {
+    width: 2.4rem;
+  }
+
+  .product-form__quantity .quantity__input {
+    font-size: 1.3rem;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .product__column-sticky {
     display: block;
