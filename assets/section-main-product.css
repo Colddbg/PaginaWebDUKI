@@ -19,6 +19,10 @@ product-info {
   padding-left: 0;
 }
 
+.product__media-wrapper .thumbnail-slider {
+  display: none !important;
+}
+
 .product__info-container .product__description,
 .product__info-container .product__text {
   display: none !important;
@@ -39,15 +43,15 @@ product-info {
 
 @media screen and (max-width: 749px) {
   .product:not(.product--no-media) .product__media-wrapper {
-    max-width: 62%;
+    max-width: 84%;
     margin-left: auto;
     margin-right: auto;
   }
 
   .product-form__input legend {
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .product-form__input fieldset.product-form__input--swatch,
@@ -259,6 +263,11 @@ product-info {
 
 .product-form__input .form__label {
   padding-left: 0;
+  font-weight: 700;
+}
+
+.product-form__quantity .form__label {
+  font-weight: 700;
 }
 
 .product-form__input .select {
@@ -328,6 +337,7 @@ a.product__text {
 .product__title {
   word-break: break-word;
   margin-bottom: 1.5rem;
+  font-weight: 800;
 }
 
 .product__title > * {
@@ -444,7 +454,44 @@ a.product__text {
 }
 
 .product-form__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 0.8rem;
   max-width: 44rem;
+}
+
+.product-form__buttons > * {
+  flex: 1;
+  min-width: 0;
+}
+
+.product-form__buttons .product-form__submit {
+  margin: 0;
+  background-color: #e0e0e0 !important;
+  color: #1a1a1a !important;
+  font-weight: 800;
+}
+
+.product-form__buttons .product-form__submit:after {
+  --border-opacity: 0 !important;
+}
+
+.product-form__buttons .shopify-payment-button {
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: 999px;
+}
+
+.product-form__buttons .shopify-payment-button shopify-accelerated-checkout {
+  display: block;
+  width: 100%;
+}
+
+.product-form__buttons .shopify-payment-button,
+.product-form__buttons .shopify-payment-button * {
+  font-weight: 800 !important;
 }
 
 .product--no-media .product__info-container > modal-opener {

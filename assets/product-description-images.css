@@ -1,0 +1,21 @@
+.product-description-images > *:not(p:has(img)) {
+  display: none;
+}
+
+.product-description-images p:has(img) {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+}
+
+.product-description-images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.product-description-images:has(img) {
+  margin-top: 2rem;
+}

@@ -42,6 +42,12 @@
   .answer-{{ section.id }} *:not(:first-child) {
     margin-top: 10px;
   }
+  .answer-{{ section.id }} img {
+    display: none;
+  }
+  .answer-{{ section.id }} p:has(img) {
+    display: none;
+  }
   .button-{{ section.id }} {
     cursor: pointer;
     background: transparent;

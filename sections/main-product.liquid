@@ -86,6 +86,8 @@
 >
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
+          {%- render 'product-trust-ticker' -%}
+
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when '@app' -%}
@@ -98,9 +100,12 @@
                   {{- block.settings.text -}}
                 </p>
               {%- when 'title' -%}
-                <h1 class="product__title" {{ block.shopify_attributes }}>
-                  {{ product.title | escape }}
-                </h1>
+                <div class="product-title-row">
+                  <h1 class="product__title" {{ block.shopify_attributes }}>
+                    {{ product.title | escape }}
+                  </h1>
+                  {%- render 'floating-shipping-badge' -%}
+                </div>
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" class="product-price-native" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
@@ -485,6 +490,7 @@
                 -%}
                 {%- render 'trust-security-badge' -%}
                 {%- render 'order-tracking-steps' -%}
+                {%- render 'product-description-images', product: product -%}
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
