@@ -14,7 +14,11 @@ quick-add-modal .product-price-native {
 }
 
 .product-price-highlight__badge {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  width: fit-content;
   background: linear-gradient(90deg, #e5007e, #ff4fa8);
   color: #fff;
   font-weight: 800;
@@ -23,7 +27,18 @@ quick-add-modal .product-price-native {
   padding: 0.6rem 1.5rem;
   border-radius: 999px;
   box-shadow: 0 4px 12px rgba(229, 0, 126, 0.35);
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
+}
+
+.product-price-highlight__timer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 0.03em;
+  font-variant-numeric: tabular-nums;
 }
 
 .product-price-highlight__shipping-pill {
@@ -74,22 +89,23 @@ quick-add-modal .product-price-native {
   content: '';
   position: absolute;
   top: 0;
-  left: -75%;
+  left: 0;
   width: 45%;
   height: 100%;
   background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.9), transparent);
-  transform: skewX(-20deg);
+  transform: translateX(-166.7%) skewX(-20deg);
   animation: product-price-highlight-shine 3s ease-in-out infinite;
   pointer-events: none;
+  will-change: transform;
 }
 
 @keyframes product-price-highlight-shine {
   0% {
-    left: -75%;
+    transform: translateX(-166.7%) skewX(-20deg);
   }
   35%,
   100% {
-    left: 130%;
+    transform: translateX(288.9%) skewX(-20deg);
   }
 }
 
@@ -149,6 +165,36 @@ quick-add-modal .product-price-native {
   font-weight: 600;
 }
 
+@media screen and (min-width: 750px) {
+  .product-price-highlight__price {
+    font-size: 3.2rem;
+  }
+
+  .product-price-highlight__compare {
+    font-size: 1.7rem;
+  }
+
+  .product-price-highlight__checks {
+    font-size: 1.3rem;
+  }
+
+  .product-price-highlight__percent {
+    font-size: 1.3rem;
+  }
+
+  .product-price-highlight__savings {
+    font-size: 1.35rem;
+  }
+
+  .product-price-highlight__shipping-note {
+    font-size: 1.15rem;
+  }
+
+  .product-price-highlight__benefits li {
+    font-size: 1.25rem;
+  }
+}
+
 @media screen and (max-width: 749px) {
   .product-price-highlight__price {
     font-size: 3.4rem;
@@ -161,6 +207,10 @@ quick-add-modal .product-price-native {
   .product-price-highlight__badge {
     font-size: 1.5rem;
     padding: 0.8rem 1.8rem;
+  }
+
+  .product-price-highlight__timer {
+    font-size: 1.5rem;
   }
 
   .product-price-highlight__shipping-pill {

@@ -13,4 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
   });
+
+  document.querySelectorAll('.product-description-images img').forEach((img) => {
+    img.loading = 'lazy';
+    img.decoding = 'async';
+  });
 });

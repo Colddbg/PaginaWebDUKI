@@ -101,12 +101,6 @@
           "type": "title",
           "settings": {}
         },
-        "custom_liquid_RXFiWC": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div style=\"display: flex; gap: 8px; margin-bottom: 10px;\">\n  <span style=\"background: #e5007e; color: #fff; padding: 4px 12px; border-radius: 12px; font-size: 13px; font-weight: 600;\">\n    Sonido de alta definición\n  </span>\n  <span style=\"background: #e5007e; color: #fff; padding: 4px 12px; border-radius: 12px; font-size: 13px; font-weight: 600;\">\n    Bluetooth\n  </span>\n</div>"
-          }
-        },
         "text_wX3FyV": {
           "type": "text",
           "settings": {
@@ -175,7 +169,6 @@
       "block_order": [
         "vendor",
         "title",
-        "custom_liquid_RXFiWC",
         "text_wX3FyV",
         "price",
         "custom_liquid_3REh6V",

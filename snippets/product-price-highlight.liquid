@@ -13,7 +13,12 @@
 -%}
 
 <div class="product-price-highlight quick-add-hidden">
-  <span class="product-price-highlight__badge">🔥 Oferta especial</span>
+  <span class="product-price-highlight__badge">
+    🔥 Oferta especial
+    <span class="product-price-highlight__timer" data-oferta-timer data-product-id="{{ product.id }}">
+      · ⏳ <span data-unit="hours">00</span>:<span data-unit="minutes">00</span>:<span data-unit="seconds">00</span>
+    </span>
+  </span>
 
   <span class="product-price-highlight__shipping-pill">📦 Envío gratis y pago al recibir</span>
 

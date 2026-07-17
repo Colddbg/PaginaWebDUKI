@@ -46,21 +46,22 @@
   content: '';
   position: absolute;
   top: -20%;
-  left: -60%;
+  left: 0;
   width: 45%;
   height: 140%;
   background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.85), transparent);
-  transform: rotate(20deg);
+  transform: translateX(-133.3%) rotate(20deg);
   animation: trust-badge-icon-shine 3s ease-in-out infinite;
+  will-change: transform;
 }
 
 @keyframes trust-badge-icon-shine {
   0% {
-    left: -60%;
+    transform: translateX(-133.3%) rotate(20deg);
   }
   35%,
   100% {
-    left: 130%;
+    transform: translateX(288.9%) rotate(20deg);
   }
 }
 
@@ -155,22 +156,23 @@
   content: '';
   position: absolute;
   top: 0;
-  left: -75%;
+  left: 0;
   width: 45%;
   height: 100%;
   background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.85), transparent);
-  transform: skewX(-20deg);
+  transform: translateX(-166.7%) skewX(-20deg);
   animation: trust-badge-method-shine 3.6s ease-in-out infinite;
   pointer-events: none;
+  will-change: transform;
 }
 
 @keyframes trust-badge-method-shine {
   0% {
-    left: -75%;
+    transform: translateX(-166.7%) skewX(-20deg);
   }
   20%,
   100% {
-    left: 130%;
+    transform: translateX(288.9%) skewX(-20deg);
   }
 }
 
