@@ -1,7 +1,7 @@
 .product-trust-ticker {
   position: relative;
   overflow: hidden;
-  height: 3.2rem;
+  height: 3.8rem;
   margin: 1.2rem 0;
   border-radius: 999px;
   background: linear-gradient(90deg, #e5007e, #ff4fa8, #e5007e);
@@ -28,7 +28,7 @@
   padding: 0 1.2rem;
   color: #fff;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   text-align: center;
   opacity: 0;
   animation: product-trust-ticker-cycle 10s ease-in-out infinite;
@@ -71,10 +71,20 @@
 
 @media screen and (max-width: 749px) {
   .product-trust-ticker {
-    height: 3.8rem;
+    height: 4.2rem;
   }
 
   .product-trust-ticker__item {
-    font-size: 1.15rem;
+    font-size: 1.35rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .product-trust-ticker {
+    height: 4rem;
+  }
+
+  .product-trust-ticker__item {
+    font-size: 1.75rem;
   }
 }

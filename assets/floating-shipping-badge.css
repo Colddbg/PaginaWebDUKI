@@ -4,7 +4,7 @@
 
 .floating-shipping-badge {
   position: absolute;
-  top: -0.8rem;
+  top: 6.5rem;
   right: 0.5rem;
   z-index: 2;
   flex-shrink: 0;

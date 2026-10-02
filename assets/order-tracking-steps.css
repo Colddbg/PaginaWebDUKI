@@ -168,3 +168,25 @@
     min-width: 0.8rem;
   }
 }
+
+@media screen and (min-width: 750px) {
+  .order-tracking__eyebrow {
+    font-size: 1.4rem;
+  }
+
+  .order-tracking__heading {
+    font-size: 2.4rem;
+  }
+
+  .order-tracking__number {
+    font-size: 1.4rem;
+  }
+
+  .order-tracking__title {
+    font-size: 1.7rem;
+  }
+
+  .order-tracking__subtitle {
+    font-size: 1.35rem;
+  }
+}

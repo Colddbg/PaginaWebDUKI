@@ -149,6 +149,56 @@ quick-add-modal .product-price-native {
   font-weight: 600;
 }
 
+@media screen and (min-width: 750px) {
+  .product-price-highlight {
+    text-align: left;
+  }
+
+  .product-price-highlight__shipping-pill {
+    text-align: center;
+  }
+
+  .product-price-highlight__benefits {
+    display: flex;
+  }
+
+  .product-price-highlight__checks {
+    justify-content: center;
+    font-size: 1.3rem;
+  }
+
+  .product-price-highlight__price-row {
+    justify-content: center;
+  }
+
+  .product-price-highlight__price {
+    font-size: 3.2rem;
+  }
+
+  .product-price-highlight__compare {
+    font-size: 1.7rem;
+  }
+
+  .product-price-highlight__percent {
+    font-size: 1.3rem;
+  }
+
+  .product-price-highlight__savings {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3rem;
+  }
+
+  .product-price-highlight__shipping-note {
+    text-align: center;
+  }
+
+  .product-price-highlight__benefits li {
+    font-size: 1.35rem;
+  }
+}
+
 @media screen and (max-width: 749px) {
   .product-price-highlight__price {
     font-size: 3.4rem;
