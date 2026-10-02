@@ -106,7 +106,7 @@
         "benefits": {
           "type": "benefits",
           "settings": {
-            "shipping_text": "Envío Gratis",
+            "shipping_text": "Envío rápido",
             "payment_methods": "Addi · Sistecrédito · Bold",
             "payment_logo_1": "shopify://shop_images/magnific_mejora-la-calidad-de-imag_5xhGPFxKxe.png",
             "payment_logo_2": "shopify://shop_images/magnific_mejora-la-calidad-de-imag_74kX0R8JAL.png",
@@ -124,7 +124,7 @@
         "promo": {
           "type": "promo",
           "settings": {
-            "text": "Hot DUKI • Hasta 70% OFF • Envío Gratis",
+            "text": "Hot DUKI • Hasta 70% OFF • Envío rápido",
             "link": "/collections/all"
           }
         }

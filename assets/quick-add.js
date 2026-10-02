@@ -112,7 +112,7 @@ if (!customElements.get('quick-add-modal')) {
         const phrases = [
           '🔥 ¡Oferta por tiempo limitado!',
           '⚡ ¡Se están agotando rápido!',
-          '🎉 ¡Envío gratis en este pedido!',
+          '🚀 ¡Envío rápido en este pedido!',
           '💥 ¡Precio especial solo por hoy!',
         ];
 
@@ -168,7 +168,7 @@ if (!customElements.get('quick-add-modal')) {
           <div class="quick-add-modal__launch-badge">PRECIO DE LANZAMIENTO: ¡APROVECHA!</div>
           <div class="quick-add-modal__trust-row">
             <span>✓ Pago contraentrega</span>
-            <span>✓ Envío gratis</span>
+            <span>✓ Envío rápido</span>
             <span>✓ Calidad certificada</span>
           </div>
           <div class="quick-add-modal__price-row">
