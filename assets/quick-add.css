@@ -899,6 +899,8 @@ quick-add-modal .product__description p {
 
 quick-add-modal .product-form__input {
   text-align: center;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 quick-add-modal .product-form__input legend {
@@ -1041,13 +1043,14 @@ quick-add-modal .product-form__buttons ._rsi-buy-now-button::after {
   content: '';
   position: absolute;
   top: 0;
-  left: -75%;
+  left: 0;
   width: 45%;
   height: 100%;
   background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.75), transparent);
-  transform: skewX(-20deg);
+  transform: translateX(-166.7%) skewX(-20deg);
   animation: quick-add-btn-shine 2.6s ease-in-out infinite;
   pointer-events: none;
+  will-change: transform;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1087,22 +1090,23 @@ quick-add-modal .product-form__submit::after {
   content: '';
   position: absolute;
   top: 0;
-  left: -75%;
+  left: 0;
   width: 45%;
   height: 100%;
   background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.75), transparent);
-  transform: skewX(-20deg);
+  transform: translateX(-166.7%) skewX(-20deg);
   animation: quick-add-btn-shine 2.6s ease-in-out infinite;
   pointer-events: none;
+  will-change: transform;
 }
 
 @keyframes quick-add-btn-shine {
   0% {
-    left: -75%;
+    transform: translateX(-166.7%) skewX(-20deg);
   }
   45%,
   100% {
-    left: 130%;
+    transform: translateX(288.9%) skewX(-20deg);
   }
 }
 

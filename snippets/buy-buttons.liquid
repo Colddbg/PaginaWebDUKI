@@ -95,6 +95,7 @@
           </button>
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
+            <span class="pay-on-delivery-badge quick-add-hidden">¡Paga al recibir!</span>
           {%- endif -%}
         </div>
       {%- endform -%}
